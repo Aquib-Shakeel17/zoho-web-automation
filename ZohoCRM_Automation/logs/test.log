@@ -1,0 +1,82 @@
+2025-02-27 22:57:08 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 22:57:14 [main] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 22:57:16 [main] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 22:57:18 [main] INFO  com.zoho.base.BaseTest - Opened Google successfully.
+2025-02-27 22:57:18 [main] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 22:57:18 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:00:32 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 23:00:36 [main] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:00:37 [main] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:00:38 [main] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:00:39 [main] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:00:39 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:06:04 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 23:06:07 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:06:09 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:06:10 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:06:10 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:06:11 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:06:52 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 23:06:55 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:06:57 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:06:59 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:06:59 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:07:00 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:07:28 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 23:07:31 [main] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:07:33 [main] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:07:36 [main] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:07:36 [main] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:07:36 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:10:35 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 23:10:39 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:10:41 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:10:41 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:10:42 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:10:42 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:12:21 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-02-27 23:12:21 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 23:12:22 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-02-27 23:12:22 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-02-27 23:12:25 [main] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:12:27 [main] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:12:28 [main] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:12:28 [main] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:12:29 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:14:14 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-02-27 23:14:14 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 23:14:15 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-02-27 23:14:15 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-02-27 23:14:18 [main] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:14:19 [main] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:14:20 [main] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:14:20 [main] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:14:20 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:19:02 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 23:19:02 [TestNG-test=ZohoCRM Tests-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-02-27 23:19:02 [TestNG-test=ZohoCRM Tests-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-02-27 23:19:04 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:19:06 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:19:08 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:19:08 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:19:09 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:21:36 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized.
+2025-02-27 23:21:37 [TestNG-test=ZohoCRM Tests-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-02-27 23:21:38 [TestNG-test=ZohoCRM Tests-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-02-27 23:21:42 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:21:44 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:21:45 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:21:45 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:21:46 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-02-27 23:25:01 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized: reports/ExtentReport_20250227_232501.html
+2025-02-27 23:25:02 [TestNG-test=ZohoCRM Tests-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-02-27 23:25:02 [TestNG-test=ZohoCRM Tests-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-02-27 23:25:04 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Launching browser: chrome
+2025-02-27 23:25:06 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Starting test: testLaunchGoogle
+2025-02-27 23:25:06 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Opened https://google.com successfully.
+2025-02-27 23:25:07 [TestNG-test=ZohoCRM Tests-1] INFO  com.zoho.base.BaseTest - Browser closed.
+2025-02-27 23:25:07 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
