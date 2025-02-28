@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="ZohoCRM Test Suite" parallel="methods" thread-count="2">
+<suite name="ZohoCRM Test Suite" parallel="methods" thread-count="1">
     <test name="ZohoCRM Tests">
         <classes>
             <class name="com.zoho.tests.LoginTest"/>

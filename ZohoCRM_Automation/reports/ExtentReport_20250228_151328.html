@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 27, 2025 11:25:01 PM</span></a>
+<a href="#"><span class="badge badge-primary">Feb 28, 2025 03:13:28 PM</span></a>
 </li>
 </ul>
 </div>
@@ -79,9 +79,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Test: LoginTest</p>
+            <p class="name">testLogin</p>
             <p class="text-sm">
-              <span>11:25:06 PM</span> / <span>00:00:00:913</span>
+              <span>3:13:34 PM</span> / <span>00:00:07:568</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +89,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Test: LoginTest</h5>
-<span class='badge badge-success'>02.27.2025 11:25:06 PM</span>
-<span class='badge badge-danger'>02.27.2025 11:25:06 PM</span>
-<span class='badge badge-default'>00:00:00:913</span>
+<h5 class="test-status text-pass">testLogin</h5>
+<span class='badge badge-success'>02.28.2025 3:13:34 PM</span>
+<span class='badge badge-danger'>02.28.2025 3:13:42 PM</span>
+<span class='badge badge-default'>00:00:07:568</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,16 +104,37 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>11:25:06 PM</td>
+        <td>3:13:34 PM</td>
         <td>
-          Navigated to https://google.com
+          Starting Login Test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:13:34 PM</td>
+        <td>
+          Navigating to login page and entering credentials
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:25:06 PM</td>
+        <td>3:13:37 PM</td>
         <td>
-          Test Passed: https://google.com opened successfully.
+          URL verification passed. Login successful.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:13:42 PM</td>
+        <td>
+          User profile name is displayed.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:13:42 PM</td>
+        <td>
+          Login Test Passed ✅
         </td>
       </tr>
   </tbody>
@@ -135,13 +156,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 27, 2025 11:25:01 PM</h3>
+<h3>Feb 28, 2025 03:13:28 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 27, 2025 11:25:07 PM</h3>
+<h3>Feb 28, 2025 03:13:42 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -192,10 +213,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='60%'><b>3</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>1</b> others
+<b data-tooltip='%'>2</b> others
 </small>
 </div>
 </div>
@@ -211,7 +232,7 @@
 </div></div>
 <script>
 var timeline = {
-"Test: LoginTest":0.913
+"testLogin":7.568
 };
 </script>
 <div class="row">
@@ -237,11 +258,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
+passEvents: 3,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 1
+infoEvents: 2
 };
 </script>        </div>
       </div>
