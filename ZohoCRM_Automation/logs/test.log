@@ -729,7 +729,7 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 00:00:32 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
 2025-03-01 00:00:32 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 00:00:39 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 00:00:39 [main] INFO  com.zoho.pages.CreateLeadPage - Navigating to Create Lead page.
+2025-03-01 00:00:39 [main] INFO  com.zoho.pages.LeadPage - Navigating to Create Lead page.
 2025-03-01 00:00:40 [main] INFO  com.zoho.base.BaseTest - Browser closed.
 2025-03-01 00:00:40 [main] INFO  com.zoho.base.BaseTest - Launching browser: chrome
 2025-03-01 00:02:30 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
@@ -755,7 +755,7 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 00:02:50 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
 2025-03-01 00:02:50 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 00:02:57 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 00:02:57 [main] INFO  com.zoho.pages.CreateLeadPage - Navigating to Create Lead page.
+2025-03-01 00:02:57 [main] INFO  com.zoho.pages.LeadPage - Navigating to Create Lead page.
 2025-03-01 00:02:58 [main] INFO  com.zoho.base.BaseTest - Browser closed.
 2025-03-01 00:02:58 [main] INFO  com.zoho.base.BaseTest - Launching browser: chrome
 2025-03-01 00:11:28 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
@@ -781,7 +781,7 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 00:11:49 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
 2025-03-01 00:11:49 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 00:11:58 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 00:11:58 [main] INFO  com.zoho.pages.CreateLeadPage - Navigating to Create Lead page.
+2025-03-01 00:11:58 [main] INFO  com.zoho.pages.LeadPage - Navigating to Create Lead page.
 2025-03-01 00:12:00 [main] INFO  com.zoho.base.BaseTest - Browser closed.
 2025-03-01 00:12:00 [main] INFO  com.zoho.base.BaseTest - Launching browser: chrome
 2025-03-01 00:32:45 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
@@ -808,9 +808,9 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 00:33:06 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
 2025-03-01 00:33:06 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 00:33:21 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 00:33:21 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 00:33:21 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 00:33:23 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 00:33:23 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching 'Create Lead' text.
+2025-03-01 00:33:23 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
 2025-03-01 00:33:26 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 00:33:26 [main] INFO  com.zoho.base.BaseTest - Browser session closed.
 2025-03-01 00:33:26 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
@@ -831,13 +831,13 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 00:33:46 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
 2025-03-01 00:33:46 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 00:34:10 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 00:34:10 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 00:34:10 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 00:34:11 [main] WARN  com.zoho.pages.BasePage - StaleElementReferenceException encountered. Retrying... Attempt: 1
 2025-03-01 00:34:11 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 00:34:11 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking 'Save' button.
+2025-03-01 00:34:11 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
 2025-03-01 00:34:12 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
-2025-03-01 00:34:12 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Company error message.
-2025-03-01 00:34:12 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Last Name error message.
+2025-03-01 00:34:12 [main] INFO  com.zoho.pages.LeadPage - Fetching Company error message.
+2025-03-01 00:34:12 [main] INFO  com.zoho.pages.LeadPage - Fetching Last Name error message.
 2025-03-01 00:34:13 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 00:34:13 [main] INFO  com.zoho.base.BaseTest - Browser session closed.
 2025-03-01 00:34:13 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
@@ -865,16 +865,16 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 }
 2025-03-01 00:34:34 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 00:34:44 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 00:34:44 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 00:34:44 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 00:34:46 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 00:34:46 [main] INFO  com.zoho.pages.CreateLeadPage - Entering lead details: TestFirst_298 TestLast_836, Company: Company_5916
+2025-03-01 00:34:46 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_298 TestLast_836, Company: Company_5916
 2025-03-01 00:34:48 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_298' in element: By.id: Crm_Leads_FIRSTNAME_LInput
 2025-03-01 00:34:49 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_836' in element: By.id: Crm_Leads_LASTNAME_LInput
 2025-03-01 00:34:49 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_5916' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
 2025-03-01 00:34:50 [main] INFO  com.zoho.pages.BasePage - Entered text 'invalidEmail' in element: By.id: Crm_Leads_EMAIL_LInput
-2025-03-01 00:34:50 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking 'Save' button.
+2025-03-01 00:34:50 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
 2025-03-01 00:34:50 [main] INFO  com.zoho.pages.BasePage - Clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
-2025-03-01 00:34:50 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Email error message.
+2025-03-01 00:34:50 [main] INFO  com.zoho.pages.LeadPage - Fetching Email error message.
 2025-03-01 00:34:50 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 00:34:50 [main] INFO  com.zoho.base.BaseTest - Browser session closed.
 2025-03-01 00:34:51 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
@@ -906,10 +906,10 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 00:49:17 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 00:49:17 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
 2025-03-01 00:49:26 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 00:49:26 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 00:49:26 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 00:49:26 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
 2025-03-01 00:49:28 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 00:49:28 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching 'Create Lead' text.
+2025-03-01 00:49:28 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
 2025-03-01 00:49:31 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 00:49:31 [main] INFO  com.zoho.base.BaseTest - Browser session closed.
 2025-03-01 00:49:31 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
@@ -934,14 +934,14 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 00:49:52 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 00:49:52 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
 2025-03-01 00:50:09 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 00:50:09 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 00:50:09 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 00:50:09 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
 2025-03-01 00:50:11 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 00:50:11 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking 'Save' button.
+2025-03-01 00:50:11 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
 2025-03-01 00:50:11 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
 2025-03-01 00:50:13 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
-2025-03-01 00:50:13 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Company error message.
-2025-03-01 00:50:13 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Last Name error message.
+2025-03-01 00:50:13 [main] INFO  com.zoho.pages.LeadPage - Fetching Company error message.
+2025-03-01 00:50:13 [main] INFO  com.zoho.pages.LeadPage - Fetching Last Name error message.
 2025-03-01 00:50:14 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 00:50:14 [main] INFO  com.zoho.base.BaseTest - Browser session closed.
 2025-03-01 00:50:14 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
@@ -986,10 +986,10 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 01:01:20 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 01:01:20 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
 2025-03-01 01:01:36 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 01:01:36 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 01:01:36 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 01:01:36 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
 2025-03-01 01:01:39 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 01:01:39 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching 'Create Lead' text.
+2025-03-01 01:01:39 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
 2025-03-01 01:01:42 [main] INFO  com.zoho.base.BaseTest - Browser session closed.
 2025-03-01 01:01:42 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithMissingMandatoryFields
 2025-03-01 01:01:42 [main] INFO  com.zoho.base.BaseTest - Launching browser: chrome
@@ -1022,10 +1022,10 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 01:11:21 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 01:11:21 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
 2025-03-01 01:11:39 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 01:11:39 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 01:11:39 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 01:11:39 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
 2025-03-01 01:11:41 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 01:11:41 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching 'Create Lead' text.
+2025-03-01 01:11:41 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
 2025-03-01 01:11:43 [main] INFO  com.zoho.base.BaseTest - Completed test execution.
 2025-03-01 01:11:43 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithMissingMandatoryFields
 2025-03-01 01:11:43 [main] INFO  com.zoho.tests.CreateLeadTest - Initializing page objects.
@@ -1068,10 +1068,10 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 01:23:34 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 01:23:34 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
 2025-03-01 01:23:35 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 01:23:35 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 01:23:35 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 01:23:35 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
 2025-03-01 01:23:36 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 01:23:36 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching 'Create Lead' text.
+2025-03-01 01:23:36 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
 2025-03-01 01:23:38 [main] INFO  com.zoho.base.BaseTest - Completed test execution.
 2025-03-01 01:23:38 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithMissingMandatoryFields
 2025-03-01 01:23:38 [main] INFO  com.zoho.tests.CreateLeadTest - Initializing page objects.
@@ -1127,10 +1127,10 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 01:31:59 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 01:31:59 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
 2025-03-01 01:32:00 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 01:32:00 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 01:32:00 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 01:32:00 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
 2025-03-01 01:32:02 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 01:32:02 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching 'Create Lead' text.
+2025-03-01 01:32:02 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
 2025-03-01 01:32:04 [main] INFO  com.zoho.base.BaseTest - Completed test execution.
 2025-03-01 01:32:04 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithMissingMandatoryFields
 2025-03-01 01:32:04 [main] INFO  com.zoho.tests.CreateLeadTest - Initializing page objects.
@@ -1268,10 +1268,10 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 01:53:20 [main] INFO  com.zoho.pages.HomePage - Navigating to Leads Page.
 2025-03-01 01:53:20 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
 2025-03-01 01:53:23 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
-2025-03-01 01:53:23 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking on 'Create Lead' button.
+2025-03-01 01:53:23 [main] INFO  com.zoho.pages.LeadPage - Clicking on 'Create Lead' button.
 2025-03-01 01:53:23 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
 2025-03-01 01:53:24 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 01:53:24 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching 'Create Lead' text.
+2025-03-01 01:53:24 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
 2025-03-01 01:53:26 [main] INFO  com.zoho.base.BaseTest - Completed test execution.
 2025-03-01 01:53:26 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithMissingMandatoryFields
 2025-03-01 01:53:26 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
@@ -1432,7 +1432,7 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 02:53:39 [main] WARN  com.zoho.pages.BasePage - StaleElementReferenceException encountered. Retrying in 500ms... Attempt: 1
 2025-03-01 02:53:39 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 2
 2025-03-01 02:53:40 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 02:53:40 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching 'Create Lead' text.
+2025-03-01 02:53:40 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
 2025-03-01 02:53:41 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
 2025-03-01 02:53:41 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 02:53:41 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithMissingMandatoryFields
@@ -1459,11 +1459,11 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 02:54:01 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
 2025-03-01 02:54:01 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
 2025-03-01 02:54:02 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 02:54:02 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking 'Save' button.
+2025-03-01 02:54:02 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
 2025-03-01 02:54:02 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
 2025-03-01 02:54:04 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
-2025-03-01 02:54:04 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Company error message.
-2025-03-01 02:54:04 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Last Name error message.
+2025-03-01 02:54:04 [main] INFO  com.zoho.pages.LeadPage - Fetching Company error message.
+2025-03-01 02:54:04 [main] INFO  com.zoho.pages.LeadPage - Fetching Last Name error message.
 2025-03-01 02:54:04 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
 2025-03-01 02:54:05 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 02:54:05 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithInvalidEmailFormat
@@ -1499,15 +1499,15 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 02:54:24 [main] WARN  com.zoho.pages.BasePage - StaleElementReferenceException encountered. Retrying in 500ms... Attempt: 1
 2025-03-01 02:54:25 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 2
 2025-03-01 02:54:25 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 02:54:25 [main] INFO  com.zoho.pages.CreateLeadPage - Entering lead details: TestFirst_253 TestLast_368, Company: Company_9315
+2025-03-01 02:54:25 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_253 TestLast_368, Company: Company_9315
 2025-03-01 02:54:26 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_253' in element: By.id: Crm_Leads_FIRSTNAME_LInput
 2025-03-01 02:54:27 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_368' in element: By.id: Crm_Leads_LASTNAME_LInput
 2025-03-01 02:54:27 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_9315' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
 2025-03-01 02:54:27 [main] INFO  com.zoho.pages.BasePage - Entered text 'invalidEmail' in element: By.id: Crm_Leads_EMAIL_LInput
-2025-03-01 02:54:27 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking 'Save' button.
+2025-03-01 02:54:27 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
 2025-03-01 02:54:27 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
 2025-03-01 02:54:28 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
-2025-03-01 02:54:28 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Email error message.
+2025-03-01 02:54:28 [main] INFO  com.zoho.pages.LeadPage - Fetching Email error message.
 2025-03-01 02:54:28 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
 2025-03-01 02:54:28 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 02:54:28 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
@@ -1545,7 +1545,7 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 03:00:51 [main] WARN  com.zoho.pages.BasePage - StaleElementReferenceException encountered. Retrying in 500ms... Attempt: 1
 2025-03-01 03:00:51 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 2
 2025-03-01 03:00:51 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 03:00:51 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching 'Create Lead' text.
+2025-03-01 03:00:51 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
 2025-03-01 03:00:53 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
 2025-03-01 03:00:53 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 03:00:53 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithMissingMandatoryFields
@@ -1574,11 +1574,11 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 03:01:11 [main] WARN  com.zoho.pages.BasePage - StaleElementReferenceException encountered. Retrying in 500ms... Attempt: 1
 2025-03-01 03:01:11 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 2
 2025-03-01 03:01:12 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 03:01:12 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking 'Save' button.
+2025-03-01 03:01:12 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
 2025-03-01 03:01:12 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
 2025-03-01 03:01:13 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
-2025-03-01 03:01:13 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Company error message.
-2025-03-01 03:01:13 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Last Name error message.
+2025-03-01 03:01:13 [main] INFO  com.zoho.pages.LeadPage - Fetching Company error message.
+2025-03-01 03:01:13 [main] INFO  com.zoho.pages.LeadPage - Fetching Last Name error message.
 2025-03-01 03:01:13 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
 2025-03-01 03:01:13 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 03:01:13 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithInvalidEmailFormat
@@ -1612,16 +1612,617 @@ Session ID: 96cb8661c5a82893b89fc2a71569695b
 2025-03-01 03:01:30 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
 2025-03-01 03:01:30 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
 2025-03-01 03:01:31 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
-2025-03-01 03:01:31 [main] INFO  com.zoho.pages.CreateLeadPage - Entering lead details: TestFirst_225 TestLast_381, Company: Company_4868
+2025-03-01 03:01:31 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_225 TestLast_381, Company: Company_4868
 2025-03-01 03:01:33 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_225' in element: By.id: Crm_Leads_FIRSTNAME_LInput
 2025-03-01 03:01:33 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_381' in element: By.id: Crm_Leads_LASTNAME_LInput
 2025-03-01 03:01:33 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_4868' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
 2025-03-01 03:01:33 [main] INFO  com.zoho.pages.BasePage - Entered text 'invalidEmail' in element: By.id: Crm_Leads_EMAIL_LInput
-2025-03-01 03:01:33 [main] INFO  com.zoho.pages.CreateLeadPage - Clicking 'Save' button.
+2025-03-01 03:01:33 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
 2025-03-01 03:01:33 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
 2025-03-01 03:01:34 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
-2025-03-01 03:01:34 [main] INFO  com.zoho.pages.CreateLeadPage - Fetching Email error message.
+2025-03-01 03:01:34 [main] INFO  com.zoho.pages.LeadPage - Fetching Email error message.
 2025-03-01 03:01:34 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
 2025-03-01 03:01:34 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 03:01:34 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
 2025-03-01 03:01:34 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 03:12:02 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 03:12:02 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 03:12:02 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_031202.html
+2025-03-01 03:12:03 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 03:12:03 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithValidData
+2025-03-01 03:12:04 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 03:12:04 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 03:12:06 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 03:12:06 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 03:12:10 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 03:12:10 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 03:12:10 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 03:12:10 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 03:12:10 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 03:12:11 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 03:12:12 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser02@gmail.com' in element: By.id: login_id
+2025-03-01 03:12:12 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 03:12:12 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 03:12:13 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 03:12:13 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 03:12:13 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 03:12:13 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 03:12:36 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 03:12:36 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 03:12:36 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_200",
+  "lastName" : "TestLast_233",
+  "company" : "Company_3939",
+  "email" : "test_5233fa8d@example.com"
+}
+2025-03-01 03:12:36 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 03:12:36 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 03:12:36 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 03:12:36 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 03:16:09 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 03:16:09 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 03:16:09 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_031609.html
+2025-03-01 03:16:10 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 03:16:10 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithValidData
+2025-03-01 03:16:10 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 03:16:10 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 03:16:13 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 03:16:13 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 03:16:18 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 03:16:18 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 03:16:18 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 03:16:18 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 03:16:18 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 03:16:19 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 03:16:21 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser02@gmail.com' in element: By.id: login_id
+2025-03-01 03:16:21 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 03:16:21 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 03:16:21 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 03:16:21 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 03:16:21 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 03:16:21 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 03:16:27 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 03:16:27 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 03:16:27 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_123",
+  "lastName" : "TestLast_125",
+  "company" : "Company_6844",
+  "email" : "test_15ad84ad@example.com"
+}
+2025-03-01 03:16:27 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 03:16:27 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 03:16:27 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 03:16:32 [main] ERROR com.zoho.utils.BrowserFactory - Error quitting the driver: Timed out waiting for driver server to stop.
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '11.0.26'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [21020e5fbfa2bca75651ba7f0c29a879, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/bq/gspj_j4d661...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55675}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55675/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 21020e5fbfa2bca75651ba7f0c29a879
+2025-03-01 03:16:32 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 03:16:32 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 03:16:53 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 03:16:53 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 03:16:53 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_031653.html
+2025-03-01 03:16:53 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 03:16:53 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithValidData
+2025-03-01 03:16:54 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 03:16:54 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 03:16:56 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 03:16:56 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 03:17:00 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 03:17:00 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 03:17:00 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 03:17:00 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 03:17:00 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 03:17:01 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 03:17:02 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 03:17:02 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 03:17:03 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 03:17:03 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 03:17:03 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 03:17:03 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 03:17:03 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 03:17:13 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 03:17:13 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 03:17:14 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_641",
+  "lastName" : "TestLast_550",
+  "company" : "Company_9505",
+  "email" : "test_ded64565@example.com"
+}
+2025-03-01 03:17:14 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 03:17:14 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 03:17:14 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 03:17:14 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 03:17:16 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 03:17:16 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_641 TestLast_550, Company: Company_9505
+2025-03-01 03:17:18 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_641' in element: By.id: Crm_Leads_FIRSTNAME_LInput
+2025-03-01 03:17:19 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_550' in element: By.id: Crm_Leads_LASTNAME_LInput
+2025-03-01 03:17:19 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_9505' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
+2025-03-01 03:17:20 [main] INFO  com.zoho.pages.BasePage - Entered text 'test_ded64565@example.com' in element: By.id: Crm_Leads_EMAIL_LInput
+2025-03-01 03:17:20 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
+2025-03-01 03:17:20 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
+2025-03-01 03:17:20 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
+2025-03-01 03:17:20 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 03:17:21 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 03:17:21 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 03:17:21 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 03:44:17 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 03:44:17 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 03:44:17 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_034417.html
+2025-03-01 03:44:17 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 03:44:17 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithValidData
+2025-03-01 03:44:18 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 03:44:18 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 03:44:20 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 03:44:20 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 03:44:22 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 03:44:22 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 03:44:23 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 03:44:23 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 03:44:23 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 03:44:23 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 03:44:25 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 03:44:25 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 03:44:25 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 03:44:25 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 03:44:25 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 03:44:26 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 03:44:26 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 03:44:36 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 03:44:36 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 03:44:36 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_487",
+  "lastName" : "TestLast_687",
+  "company" : "Company_9583",
+  "email" : "test_d9d11e3d@example.com"
+}
+2025-03-01 03:44:36 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 03:44:36 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 03:44:36 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 03:44:36 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 03:44:37 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 03:44:37 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_487 TestLast_687, Company: Company_9583
+2025-03-01 03:44:39 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_487' in element: By.id: Crm_Leads_FIRSTNAME_LInput
+2025-03-01 03:44:39 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_687' in element: By.id: Crm_Leads_LASTNAME_LInput
+2025-03-01 03:44:39 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_9583' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
+2025-03-01 03:44:40 [main] INFO  com.zoho.pages.BasePage - Entered text 'test_d9d11e3d@example.com' in element: By.id: Crm_Leads_EMAIL_LInput
+2025-03-01 03:44:40 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
+2025-03-01 03:44:40 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
+2025-03-01 03:44:40 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
+2025-03-01 03:44:41 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 03:44:42 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 03:44:42 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 03:44:42 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 04:09:58 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 04:09:58 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 04:09:58 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_040958.html
+2025-03-01 04:09:59 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 04:09:59 [main] INFO  com.zoho.base.BaseTest - Starting test: testCancelLeadCreation
+2025-03-01 04:09:59 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 04:09:59 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 04:10:01 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 04:10:01 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 04:10:06 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 04:10:06 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 04:10:06 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 04:10:06 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 04:10:06 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 04:10:07 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 04:10:08 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 04:10:08 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 04:10:08 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 04:10:09 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 04:10:09 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 04:10:09 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 04:10:09 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 04:10:30 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 04:10:30 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 04:10:30 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_182",
+  "lastName" : "TestLast_445",
+  "company" : "Company_8074",
+  "email" : "test_beefaa58@example.com"
+}
+2025-03-01 04:10:30 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 04:10:30 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 04:10:30 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 04:10:31 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 04:10:52 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 04:10:52 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 04:10:52 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_041052.html
+2025-03-01 04:10:52 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 04:10:52 [main] INFO  com.zoho.base.BaseTest - Starting test: testCancelLeadCreation
+2025-03-01 04:10:53 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 04:10:53 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 04:10:55 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 04:10:55 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 04:10:58 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 04:10:58 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 04:10:58 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 04:10:58 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 04:10:58 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 04:10:59 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 04:11:00 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 04:11:00 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 04:11:00 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 04:11:01 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 04:11:01 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 04:11:01 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 04:11:01 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 04:11:23 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 04:11:23 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 04:11:23 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_52",
+  "lastName" : "TestLast_310",
+  "company" : "Company_5895",
+  "email" : "test_852c982d@example.com"
+}
+2025-03-01 04:11:23 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 04:11:23 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 04:11:23 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 04:11:23 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 04:12:41 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 04:12:42 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 04:12:42 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_041242.html
+2025-03-01 04:12:42 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 04:12:42 [main] INFO  com.zoho.base.BaseTest - Starting test: testCancelLeadCreation
+2025-03-01 04:12:43 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 04:12:43 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 04:12:45 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 04:12:45 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 04:12:48 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 04:12:48 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 04:12:48 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 04:12:48 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 04:12:48 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 04:12:49 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 04:12:50 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 04:12:50 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 04:12:51 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 04:12:51 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 04:12:51 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 04:12:51 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 04:12:51 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 04:13:01 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 04:13:01 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 04:13:01 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_928",
+  "lastName" : "TestLast_370",
+  "company" : "Company_9164",
+  "email" : "test_0e7b70eb@example.com"
+}
+2025-03-01 04:13:01 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 04:13:01 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 04:13:02 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 04:13:02 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 04:13:02 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 04:13:02 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_928 TestLast_370, Company: Company_9164
+2025-03-01 04:13:03 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_928' in element: By.id: Crm_Leads_FIRSTNAME_LInput
+2025-03-01 04:13:04 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_370' in element: By.id: Crm_Leads_LASTNAME_LInput
+2025-03-01 04:13:04 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_9164' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
+2025-03-01 04:13:04 [main] INFO  com.zoho.pages.BasePage - Entered text 'test_0e7b70eb@example.com' in element: By.id: Crm_Leads_EMAIL_LInput
+2025-03-01 04:13:04 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Cancel' button.
+2025-03-01 04:13:04 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='crm_create_cancelbutn']//lyte-yield[contains(@yield-name,'text')][normalize-space()='Cancel'] | Attempt: 1
+2025-03-01 04:13:05 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='crm_create_cancelbutn']//lyte-yield[contains(@yield-name,'text')][normalize-space()='Cancel']
+2025-03-01 04:13:15 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 04:13:15 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 04:13:15 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 04:13:15 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 04:19:10 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 04:19:10 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 04:19:10 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_041910.html
+2025-03-01 04:19:10 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 04:19:10 [main] INFO  com.zoho.base.BaseTest - Starting test: testCancelLeadCreation
+2025-03-01 04:19:11 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 04:19:11 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 04:19:13 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 04:19:13 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 04:19:18 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 04:19:18 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 04:19:18 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 04:19:18 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 04:19:18 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 04:19:19 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 04:19:20 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 04:19:20 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 04:19:20 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 04:19:21 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 04:19:21 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 04:19:21 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 04:19:21 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 04:19:45 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 04:19:45 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 04:19:45 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_844",
+  "lastName" : "TestLast_25",
+  "company" : "Company_5616",
+  "email" : "test_b1268970@example.com"
+}
+2025-03-01 04:19:45 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 04:19:45 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 04:19:45 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 04:19:45 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 04:19:46 [main] WARN  com.zoho.pages.BasePage - StaleElementReferenceException encountered. Retrying in 500ms... Attempt: 1
+2025-03-01 04:19:47 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 2
+2025-03-01 04:19:47 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 04:19:47 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_844 TestLast_25, Company: Company_5616
+2025-03-01 04:19:48 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_844' in element: By.id: Crm_Leads_FIRSTNAME_LInput
+2025-03-01 04:19:49 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_25' in element: By.id: Crm_Leads_LASTNAME_LInput
+2025-03-01 04:19:49 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_5616' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
+2025-03-01 04:19:49 [main] INFO  com.zoho.pages.BasePage - Entered text 'test_b1268970@example.com' in element: By.id: Crm_Leads_EMAIL_LInput
+2025-03-01 04:19:49 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Cancel' button.
+2025-03-01 04:19:49 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='crm_create_cancelbutn']//lyte-yield[contains(@yield-name,'text')][normalize-space()='Cancel'] | Attempt: 1
+2025-03-01 04:19:49 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='crm_create_cancelbutn']//lyte-yield[contains(@yield-name,'text')][normalize-space()='Cancel']
+2025-03-01 04:19:50 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 04:19:50 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 04:19:50 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 04:19:50 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 05:15:20 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 05:15:20 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 05:15:20 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_051520.html
+2025-03-01 05:15:21 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 05:15:21 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithValidData
+2025-03-01 05:15:22 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 05:15:22 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 05:15:25 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 05:15:25 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 05:15:28 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 05:15:28 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 05:15:29 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 05:15:29 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 05:15:29 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 05:15:29 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 05:15:31 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 05:15:31 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 05:15:31 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 05:15:31 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 05:15:31 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 05:15:32 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 05:15:32 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 05:15:42 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 05:15:42 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 05:15:42 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_589",
+  "lastName" : "TestLast_229",
+  "company" : "Company_2992",
+  "email" : "test_94798243@example.com"
+}
+2025-03-01 05:15:42 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 05:15:42 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 05:15:42 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 05:15:42 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 05:15:43 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 05:15:43 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_589 TestLast_229, Company: Company_2992
+2025-03-01 05:15:45 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_589' in element: By.id: Crm_Leads_FIRSTNAME_LInput
+2025-03-01 05:15:45 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_229' in element: By.id: Crm_Leads_LASTNAME_LInput
+2025-03-01 05:15:45 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_2992' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
+2025-03-01 05:15:46 [main] INFO  com.zoho.pages.BasePage - Entered text 'test_94798243@example.com' in element: By.id: Crm_Leads_EMAIL_LInput
+2025-03-01 05:15:46 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
+2025-03-01 05:15:46 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
+2025-03-01 05:15:46 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
+2025-03-01 05:15:48 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 05:15:49 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 05:15:49 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 05:15:49 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 05:16:35 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 05:16:35 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 05:16:35 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_051635.html
+2025-03-01 05:16:35 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 05:16:35 [main] INFO  com.zoho.base.BaseTest - Starting test: testValidateCreateLeadText
+2025-03-01 05:16:36 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 05:16:36 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 05:16:39 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 05:16:39 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 05:16:41 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 05:16:41 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 05:16:41 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 05:16:41 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 05:16:41 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 05:16:42 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 05:16:43 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 05:16:43 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 05:16:44 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 05:16:44 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 05:16:44 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 05:16:44 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 05:16:44 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 05:16:54 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 05:16:54 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 05:16:54 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 05:16:54 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 05:16:55 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 05:16:55 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 05:16:56 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 05:16:56 [main] INFO  com.zoho.pages.LeadPage - Fetching 'Create Lead' text.
+2025-03-01 05:16:57 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 05:16:58 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 05:16:58 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithMissingMandatoryFields
+2025-03-01 05:16:58 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 05:16:58 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 05:17:00 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 05:17:03 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 05:17:03 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 05:17:03 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 05:17:03 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 05:17:03 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 05:17:04 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 05:17:06 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 05:17:06 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 05:17:06 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 05:17:07 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 05:17:07 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 05:17:07 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 05:17:07 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 05:17:17 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 05:17:17 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 05:17:17 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 05:17:17 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 05:17:17 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 05:17:17 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 05:17:18 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 05:17:18 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
+2025-03-01 05:17:18 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
+2025-03-01 05:17:20 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
+2025-03-01 05:17:20 [main] INFO  com.zoho.pages.LeadPage - Fetching Company error message.
+2025-03-01 05:17:20 [main] INFO  com.zoho.pages.LeadPage - Fetching Last Name error message.
+2025-03-01 05:17:20 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 05:17:20 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 05:17:21 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithInvalidEmailFormat
+2025-03-01 05:17:21 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 05:17:21 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 05:17:22 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 05:17:25 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 05:17:25 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 05:17:25 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 05:17:25 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 05:17:25 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 05:17:26 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 05:17:27 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 05:17:27 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 05:17:27 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 05:17:27 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 05:17:27 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 05:17:28 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 05:17:28 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 05:17:38 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 05:17:38 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 05:17:38 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithInvalidEmailFormat -> {
+  "testName" : "testCreateLeadWithInvalidEmailFormat",
+  "firstName" : "TestFirst_251",
+  "lastName" : "TestLast_805",
+  "company" : "Company_2577",
+  "email" : "invalidEmail"
+}
+2025-03-01 05:17:38 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 05:17:38 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 05:17:38 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 05:17:38 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 05:17:39 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 05:17:39 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_251 TestLast_805, Company: Company_2577
+2025-03-01 05:17:40 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_251' in element: By.id: Crm_Leads_FIRSTNAME_LInput
+2025-03-01 05:17:41 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_805' in element: By.id: Crm_Leads_LASTNAME_LInput
+2025-03-01 05:17:41 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_2577' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
+2025-03-01 05:17:41 [main] INFO  com.zoho.pages.BasePage - Entered text 'invalidEmail' in element: By.id: Crm_Leads_EMAIL_LInput
+2025-03-01 05:17:41 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
+2025-03-01 05:17:41 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
+2025-03-01 05:17:41 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
+2025-03-01 05:17:41 [main] INFO  com.zoho.pages.LeadPage - Fetching Email error message.
+2025-03-01 05:17:42 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 05:17:42 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 05:17:42 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithValidData
+2025-03-01 05:17:42 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 05:17:42 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 05:17:43 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 05:17:46 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 05:17:46 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 05:17:46 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 05:17:46 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 05:17:46 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 05:17:47 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 05:17:48 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 05:17:48 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 05:17:49 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 05:17:49 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 05:17:49 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 05:17:49 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 05:17:49 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 05:18:14 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 05:18:14 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 05:18:14 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_865",
+  "lastName" : "TestLast_373",
+  "company" : "Company_3076",
+  "email" : "test_c2130eb8@example.com"
+}
+2025-03-01 05:18:14 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 05:18:14 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 05:18:14 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 05:18:14 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 05:18:15 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 05:18:15 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_865 TestLast_373, Company: Company_3076
+2025-03-01 05:18:16 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_865' in element: By.id: Crm_Leads_FIRSTNAME_LInput
+2025-03-01 05:18:17 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_373' in element: By.id: Crm_Leads_LASTNAME_LInput
+2025-03-01 05:18:17 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_3076' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
+2025-03-01 05:18:17 [main] INFO  com.zoho.pages.BasePage - Entered text 'test_c2130eb8@example.com' in element: By.id: Crm_Leads_EMAIL_LInput
+2025-03-01 05:18:17 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
+2025-03-01 05:18:17 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
+2025-03-01 05:18:17 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
+2025-03-01 05:18:19 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 05:18:19 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 05:18:19 [main] INFO  com.zoho.base.BaseTest - Starting test: testCancelLeadCreation
+2025-03-01 05:18:19 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 05:18:19 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 05:18:21 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 05:18:25 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 05:18:25 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 05:18:25 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 05:18:25 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 05:18:25 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 05:18:25 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 05:18:27 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser00@gmail.com' in element: By.id: login_id
+2025-03-01 05:18:27 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 05:18:27 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 05:18:27 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 05:18:27 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 05:18:28 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 05:18:28 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 05:18:38 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 05:18:38 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 05:18:38 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithValidData -> {
+  "testName" : "testCreateLeadWithValidData",
+  "firstName" : "TestFirst_697",
+  "lastName" : "TestLast_845",
+  "company" : "Company_7630",
+  "email" : "test_122cfb79@example.com"
+}
+2025-03-01 05:18:38 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 05:18:38 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 05:18:38 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 05:18:38 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 05:18:38 [main] WARN  com.zoho.pages.BasePage - StaleElementReferenceException encountered. Retrying in 500ms... Attempt: 1
+2025-03-01 05:18:39 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 2
+2025-03-01 05:18:39 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 05:18:39 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_697 TestLast_845, Company: Company_7630
+2025-03-01 05:18:40 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_697' in element: By.id: Crm_Leads_FIRSTNAME_LInput
+2025-03-01 05:18:41 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_845' in element: By.id: Crm_Leads_LASTNAME_LInput
+2025-03-01 05:18:41 [main] INFO  com.zoho.pages.BasePage - Entered text 'Company_7630' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
+2025-03-01 05:18:41 [main] INFO  com.zoho.pages.BasePage - Entered text 'test_122cfb79@example.com' in element: By.id: Crm_Leads_EMAIL_LInput
+2025-03-01 05:18:41 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Cancel' button.
+2025-03-01 05:18:41 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='crm_create_cancelbutn']//lyte-yield[contains(@yield-name,'text')][normalize-space()='Cancel'] | Attempt: 1
+2025-03-01 05:18:41 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='crm_create_cancelbutn']//lyte-yield[contains(@yield-name,'text')][normalize-space()='Cancel']
+2025-03-01 05:18:41 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 05:18:42 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 05:18:42 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 05:18:42 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.

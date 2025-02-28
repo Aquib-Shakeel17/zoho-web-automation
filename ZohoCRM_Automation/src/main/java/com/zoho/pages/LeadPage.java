@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class CreateLeadPage extends BasePage {
-    private static final Logger log = LogManager.getLogger(CreateLeadPage.class);
+public class LeadPage extends BasePage {
+    private static final Logger log = LogManager.getLogger(LeadPage.class);
 
     // Locators for Lead Form Fields
     private By firstNameField = By.id("Crm_Leads_FIRSTNAME_LInput");
@@ -25,7 +25,9 @@ public class CreateLeadPage extends BasePage {
     private By createLeadText = By.xpath("//label[normalize-space()='Create Lead']");
     private By createLeadButton = By.xpath("//button[normalize-space()='Create Lead']");
 
-    public CreateLeadPage(WebDriver driver) {
+    private By cancelText = By.xpath("//div[@class='crm-heading-font-size crmHeadingColor crm-font-bold fontSmooth']");
+
+    public LeadPage(WebDriver driver) {
         super(driver);
     }
 
@@ -74,9 +76,17 @@ public class CreateLeadPage extends BasePage {
     }
 
     // Click Create Lead
-    public CreateLeadPage clickCreateLead() {
+    public LeadPage clickCreateLead() {
         log.info("Clicking on 'Create Lead' button.");
         click(createLeadButton);
         return this; // Return current instance instead of creating a new one
+    }
+
+    public boolean isCreateLeadButtonVisible() {
+        return driver.findElement(createLeadButton).isDisplayed();
+    }
+
+    public boolean isCancelTextDisplayed() {
+        return driver.findElement(cancelText).isDisplayed();
     }
 }

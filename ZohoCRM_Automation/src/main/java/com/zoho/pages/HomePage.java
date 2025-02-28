@@ -28,10 +28,10 @@ public class HomePage extends BasePage {
     }
 
     // Navigate directly to Create Lead Page
-    public CreateLeadPage navigateToCreateLeadPage() {
+    public LeadPage navigateToCreateLeadPage() {
         log.info("Navigating to Create Lead Page.");
         click(leadsTab);
         click(createLeadButton); // Directly clicking on create lead
-        return new CreateLeadPage(driver);
+        return new LeadPage(driver);
     }
 }
