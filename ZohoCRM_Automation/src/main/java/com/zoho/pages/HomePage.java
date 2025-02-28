@@ -11,10 +11,12 @@ import org.apache.logging.log4j.Logger;
 public class HomePage extends BasePage {
     private static final Logger log = LogManager.getLogger(HomePage.class);
 
-    // Locator for the user profile name element
+    // Locators
     private By userProfileName = By.xpath("//span[@id='show-uName']");
+    private By leadsTab = By.xpath("//lyte-text[normalize-space()='Leads']");
+    private By createLeadButton = By.xpath("//button[normalize-space()='Create Lead']"); // Add Create Lead Button
 
-    // Constructor to initialize WebDriver and inherit BasePage methods
+    // Constructor
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -23,5 +25,13 @@ public class HomePage extends BasePage {
     public boolean isUserProfileNameDisplayed() {
         log.info("Checking if user profile name is displayed.");
         return isElementDisplayed(userProfileName);
+    }
+
+    // Navigate directly to Create Lead Page
+    public CreateLeadPage navigateToCreateLeadPage() {
+        log.info("Navigating to Create Lead Page.");
+        click(leadsTab);
+        click(createLeadButton); // Directly clicking on create lead
+        return new CreateLeadPage(driver);
     }
 }

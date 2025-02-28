@@ -6,52 +6,53 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class BrowserFactory {
+    private static final Logger log = LogManager.getLogger(BrowserFactory.class);
+    private static final ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
 
-    // ThreadLocal ensures WebDriver instances are thread-safe in parallel execution
-    private static ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
-
-    /**
-     * Initializes and returns a WebDriver instance based on the provided browser name.
-     * @param browser The name of the browser to launch.
-     * @return WebDriver instance.
-     */
-    public static WebDriver getDriver(String browser) {
+    public static synchronized WebDriver getDriver(String browser) {
         if (driverThreadLocal.get() == null) {
-            WebDriver driver;
+            WebDriver driverInstance;
             switch (browser.toLowerCase()) {
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver();
+                    driverInstance = new FirefoxDriver();
                     break;
                 case "edge":
                     WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
+                    driverInstance = new EdgeDriver();
                     break;
                 case "chrome":
                 default:
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--start-maximized"); // Ensures Chrome starts maximized
-                    driver = new ChromeDriver(options);
+                    options.addArguments("--start-maximized");
+                    options.addArguments("--disable-notifications");
+                    driverInstance = new ChromeDriver(options);
                     break;
             }
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // Set implicit wait
-            driverThreadLocal.set(driver); // Store driver instance in ThreadLocal
+            driverInstance.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            log.info("Initialized WebDriver for browser: " + browser);
+            driverThreadLocal.set(driverInstance);
         }
         return driverThreadLocal.get();
     }
 
-    /**
-     * Quits the WebDriver instance and removes it from ThreadLocal storage.
-     */
     public static void quitDriver() {
         if (driverThreadLocal.get() != null) {
-            driverThreadLocal.get().quit(); // Close browser
-            driverThreadLocal.remove(); // Prevent memory leaks
+            try {
+                driverThreadLocal.get().quit();
+                log.info("Browser session closed successfully.");
+            } catch (Exception e) {
+                log.error("Error quitting the driver: " + e.getMessage());
+            } finally {
+                driverThreadLocal.remove();
+            }
         }
     }
 }
+

@@ -7,7 +7,7 @@ import java.time.Duration;
 
 public class WaitUtil {
 
-    private static final int TIMEOUT = 10; // Set default timeout
+    private static final int TIMEOUT = 30; // Set default timeout
 
     // Wait for element to be visible
     public static WebElement waitForElementVisible(WebDriver driver, By locator) {

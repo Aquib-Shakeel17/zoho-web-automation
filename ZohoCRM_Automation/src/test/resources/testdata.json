@@ -1,0 +1,24 @@
+{
+  "testCases": [
+    {
+      "testName": "testValidateCreateLeadText"
+    },
+    {
+      "testName": "testCreateLeadWithMissingMandatoryFields"
+    },
+    {
+      "testName": "testCreateLeadWithInvalidEmailFormat",
+      "firstName": "RANDOM",
+      "lastName": "RANDOM",
+      "company": "RANDOM",
+      "email": "invalidEmail"
+    },
+    {
+      "testName": "testCreateLeadWithValidData",
+      "firstName": "RANDOM",
+      "lastName": "RANDOM",
+      "company": "RANDOM",
+      "email": "RANDOM"
+    }
+  ]
+}

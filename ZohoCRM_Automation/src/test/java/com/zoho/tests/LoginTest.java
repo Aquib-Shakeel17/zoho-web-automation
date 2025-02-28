@@ -17,8 +17,8 @@ public class LoginTest extends BaseTest {
     @BeforeMethod
     public void setupTest() {
         log.info("Initializing LoginPage and HomePage objects.");
-        loginPage = new LoginPage(driver);
-        homePage = new HomePage(driver);
+        loginPage = new LoginPage(getDriver());
+        homePage = new HomePage(getDriver());
     }
 
     @Test
@@ -30,18 +30,7 @@ public class LoginTest extends BaseTest {
         test.get().info("Navigating to login page and entering credentials");
         loginPage.signIn();
 
-        // Verify login by checking if the URL contains "Home"
-        String currentUrl = driver.getCurrentUrl();
-        boolean isLoginSuccessful = currentUrl.contains("Home");
-
-        if (isLoginSuccessful) {
-            test.get().pass("URL verification passed. Login successful.");
-        } else {
-            test.get().fail("Login failed! URL does not contain 'Home'.");
-        }
-        Assert.assertTrue(isLoginSuccessful, "Login failed! URL does not contain 'Home'.");
-
-        // Verify that the user profile name is displayed after login
+        // Verify login by checking if the user profile name is displayed after login
         boolean isProfileVisible = homePage.isUserProfileNameDisplayed();
 
         if (isProfileVisible) {

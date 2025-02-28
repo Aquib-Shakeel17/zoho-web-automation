@@ -5,6 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.zoho.config.AppConfig;
 import com.zoho.utils.BrowserFactory;
+import com.zoho.utils.SessionManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -15,52 +16,52 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class BaseTest {
-    protected static ExtentReports extent; // Shared ExtentReports instance
-    protected static ThreadLocal<ExtentTest> test = new ThreadLocal<>(); // Thread-local for parallel execution
+    protected static ExtentReports extent;
+    protected static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     protected static final Logger log = LogManager.getLogger(BaseTest.class);
-
-    protected WebDriver driver; // WebDriver instance for test execution
+    protected static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     @BeforeSuite
-    public void setupReport() {
-        // Generate a timestamped report file path
+    public void setupSuite() {
+        log.info("Initializing Extent Reports for test suite...");
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + timestamp + ".html";
-
-        // Initialize ExtentReports with SparkReporter
         ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
         extent = new ExtentReports();
         extent.attachReporter(spark);
-        log.info("Extent Reports initialized: " + reportPath);
+        log.info("Extent Reports initialized at: " + reportPath);
     }
 
-    @Parameters("browser")
     @BeforeMethod
-    public void setup(@Optional("chrome") String browser, Method method) {
-        // Launch the specified browser
-        driver = BrowserFactory.getDriver(browser);
-        log.info("Launching browser: " + browser);
+    @Parameters("browser")
+    public void setupTest(@Optional("chrome") String browser, Method method) {
+        log.info("Starting test: " + method.getName());
+        driver.set(BrowserFactory.getDriver(browser));
+        driver.get().manage().window().maximize();
+        driver.get().get(AppConfig.BASE_URL);
+        log.info("Navigated to: " + AppConfig.BASE_URL);
 
-        // Navigate to the base URL
-        driver.get(AppConfig.BASE_URL);
-        log.info("Navigating to Zoho CRM URL: " + AppConfig.BASE_URL);
+        // Ensure the user is logged in before executing the test
+        SessionManager.ensureUserIsLoggedIn(getDriver());
 
-        // Initialize ExtentTest for the current test method
         ExtentTest extentTest = extent.createTest(method.getName());
         test.set(extentTest);
     }
 
+    public WebDriver getDriver() {
+        return driver.get();
+    }
+
     @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit(); // Close the browser after each test
-            log.info("Browser closed.");
-        }
+    public void tearDownTest() {
+        log.info("Closing browser after test execution.");
+        BrowserFactory.quitDriver();
     }
 
     @AfterSuite
-    public void flushReport() {
-        extent.flush(); // Ensure ExtentReports data is saved at the end of test execution
+    public void tearDownSuite() {
+        log.info("Tearing down the test suite.");
+        extent.flush();
         log.info("Extent Reports flushed.");
     }
 }
