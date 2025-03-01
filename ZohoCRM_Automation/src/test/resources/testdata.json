@@ -10,14 +10,14 @@
       "testName": "testCreateLeadWithInvalidEmailFormat",
       "firstName": "RANDOM",
       "lastName": "RANDOM",
-      "company": "RANDOM",
+      "company": "Testing",
       "email": "invalidEmail"
     },
     {
       "testName": "testCreateLeadWithValidData",
       "firstName": "RANDOM",
       "lastName": "RANDOM",
-      "company": "RANDOM",
+      "company": "Testing",
       "email": "RANDOM"
     },
     {

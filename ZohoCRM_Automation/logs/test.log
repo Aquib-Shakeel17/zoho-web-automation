@@ -3716,3 +3716,54 @@ Session ID: 21020e5fbfa2bca75651ba7f0c29a879
 2025-03-01 18:15:56 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
 2025-03-01 18:15:56 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
 2025-03-01 18:15:56 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
+2025-03-01 18:46:56 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/apple/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
+
+2025-03-01 18:46:56 [main] INFO  com.zoho.base.BaseTest - Initializing Extent Reports for test suite...
+2025-03-01 18:46:56 [main] INFO  com.zoho.base.BaseTest - Extent Reports initialized at: /Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation/reports/ExtentReport_20250301_184656.html
+2025-03-01 18:46:57 [main] INFO  com.zoho.utils.JsonDataReader - Test data loaded successfully from: src/test/resources/testdata.json
+2025-03-01 18:46:57 [main] INFO  com.zoho.base.BaseTest - Starting test: testCreateLeadWithInvalidEmailFormat
+2025-03-01 18:46:58 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-01 18:46:58 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/apple/.cache/selenium/chromedriver/mac64/133.0.6943.141/chromedriver
+2025-03-01 18:47:00 [main] INFO  com.zoho.utils.BrowserFactory - Initialized WebDriver for browser: chrome
+2025-03-01 18:47:00 [main] INFO  com.zoho.config.ConfigManager - ✅ Config properties loaded successfully.
+2025-03-01 18:47:04 [main] INFO  com.zoho.base.BaseTest - Navigated to: https://www.zoho.com/crm/
+2025-03-01 18:47:04 [main] INFO  com.zoho.utils.SessionManager - Checking if user session is active...
+2025-03-01 18:47:04 [main] INFO  com.zoho.utils.SessionManager - No active session found or user is on the login page. Proceeding with login...
+2025-03-01 18:47:04 [main] INFO  com.zoho.pages.LoginPage - Navigating to login page and signing in.
+2025-03-01 18:47:04 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In'] | Attempt: 1
+2025-03-01 18:47:05 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //a[@class='zgh-login'][normalize-space()='Sign In']
+2025-03-01 18:47:06 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohotestinguser04@gmail.com' in element: By.id: login_id
+2025-03-01 18:47:06 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //span[normalize-space()='Next'] | Attempt: 1
+2025-03-01 18:47:06 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //span[normalize-space()='Next']
+2025-03-01 18:47:07 [main] INFO  com.zoho.pages.BasePage - Entered text 'zohouser@123' in element: By.xpath: //input[@id='password']
+2025-03-01 18:47:07 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')] | Attempt: 1
+2025-03-01 18:47:07 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[@id='nextbtn']//span[contains(text(),'Sign in')]
+2025-03-01 18:47:07 [main] INFO  com.zoho.pages.HomePage - Checking if user profile name is displayed.
+2025-03-01 18:47:29 [main] ERROR com.zoho.pages.BasePage - Element not displayed: By.xpath: //span[@id='show-uName']
+2025-03-01 18:47:29 [main] ERROR com.zoho.utils.SessionManager - Login failed! Unable to detect active session.
+2025-03-01 18:47:29 [main] INFO  com.zoho.utils.JsonDataReader - Generated Test Data for: testCreateLeadWithInvalidEmailFormat -> {
+  "testName" : "testCreateLeadWithInvalidEmailFormat",
+  "firstName" : "TestFirst_621",
+  "lastName" : "TestLast_271",
+  "company" : "Testing",
+  "email" : "invalidEmail"
+}
+2025-03-01 18:47:29 [main] INFO  com.zoho.pages.HomePage - Navigating to Create Lead Page.
+2025-03-01 18:47:29 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-text[normalize-space()='Leads'] | Attempt: 1
+2025-03-01 18:47:29 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-text[normalize-space()='Leads']
+2025-03-01 18:47:29 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //button[normalize-space()='Create Lead'] | Attempt: 1
+2025-03-01 18:47:30 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //button[normalize-space()='Create Lead']
+2025-03-01 18:47:30 [main] INFO  com.zoho.pages.LeadPage - Entering lead details: TestFirst_621 TestLast_271, Company: Testing
+2025-03-01 18:47:32 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestFirst_621' in element: By.id: Crm_Leads_FIRSTNAME_LInput
+2025-03-01 18:47:33 [main] INFO  com.zoho.pages.BasePage - Entered text 'TestLast_271' in element: By.id: Crm_Leads_LASTNAME_LInput
+2025-03-01 18:47:33 [main] INFO  com.zoho.pages.BasePage - Entered text 'Testing' in element: By.xpath: //crm-create-fields[@id='Leads_fldRow_COMPANY']//input[1]
+2025-03-01 18:47:33 [main] INFO  com.zoho.pages.BasePage - Entered text 'invalidEmail' in element: By.id: Crm_Leads_EMAIL_LInput
+2025-03-01 18:47:33 [main] INFO  com.zoho.pages.LeadPage - Clicking 'Save' button.
+2025-03-01 18:47:33 [main] INFO  com.zoho.pages.BasePage - Attempting to click on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1] | Attempt: 1
+2025-03-01 18:47:33 [main] INFO  com.zoho.pages.BasePage - Successfully clicked on element: By.xpath: //lyte-button[@id='crm_create_savebutnLeads']//lyte-yield[1]
+2025-03-01 18:47:33 [main] INFO  com.zoho.pages.LeadPage - Fetching Email error message.
+2025-03-01 18:47:33 [main] INFO  com.zoho.base.BaseTest - Closing browser after test execution.
+2025-03-01 18:47:34 [main] INFO  com.zoho.utils.BrowserFactory - Browser session closed successfully.
+2025-03-01 18:47:34 [main] INFO  com.zoho.base.BaseTest - Tearing down the test suite.
+2025-03-01 18:47:34 [main] INFO  com.zoho.base.BaseTest - Extent Reports flushed.
