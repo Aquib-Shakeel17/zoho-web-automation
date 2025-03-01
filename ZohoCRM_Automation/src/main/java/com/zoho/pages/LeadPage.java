@@ -75,13 +75,6 @@ public class LeadPage extends BasePage {
         return getText(createLeadText);
     }
 
-    // Click Create Lead
-    public LeadPage clickCreateLead() {
-        log.info("Clicking on 'Create Lead' button.");
-        click(createLeadButton);
-        return this; // Return current instance instead of creating a new one
-    }
-
     public boolean isCreateLeadButtonVisible() {
         return driver.findElement(createLeadButton).isDisplayed();
     }
@@ -89,4 +82,5 @@ public class LeadPage extends BasePage {
     public boolean isCancelTextDisplayed() {
         return driver.findElement(cancelText).isDisplayed();
     }
+
 }

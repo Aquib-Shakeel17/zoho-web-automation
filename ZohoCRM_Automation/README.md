@@ -15,7 +15,7 @@ This is an automation framework designed for testing Zoho CRM's web application.
 ├── /src
 │   ├── /main/java/com/zoho/config
 │   │   ├── ConfigManager.java
-│   │   └── Constants.java
+│   │   └── AppConfig.java
 │   ├── /main/java/com/zoho/utils
 │   │   └── BrowserFactory.java
 │   ├── /test/java/com/zoho/base

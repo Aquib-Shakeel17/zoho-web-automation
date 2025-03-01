@@ -34,4 +34,11 @@ public class HomePage extends BasePage {
         click(createLeadButton); // Directly clicking on create lead
         return new LeadPage(driver);
     }
+
+
+    public LeadPage navigateToLeadPage() {
+        log.info("Navigating to Lead Page.");
+        click(leadsTab);
+        return new LeadPage(driver);
+    }
 }
