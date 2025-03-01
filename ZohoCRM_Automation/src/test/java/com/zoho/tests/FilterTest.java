@@ -26,34 +26,43 @@ public class FilterTest extends BaseTest {
     }
 
     @Test(priority = 1)
-    public void testFilterByCityAndSave() throws InterruptedException {
+    public void testFilterByCityAndSave() {
         test.get().log(Status.INFO, "Starting test: Apply Filter by City and Save it");
 
-        homePage = new HomePage(getDriver());
-        leadPage = homePage.navigateToLeadPage();
-        filterPage = new FilterPage(getDriver());
+        try {
+            homePage = new HomePage(getDriver());
+            leadPage = homePage.navigateToLeadPage();
+            filterPage = new FilterPage(getDriver());
 
-        // Corrected: Get the test case directly
-        JsonNode testCase = jsonDataReader.getTestData("testFilterByCity");
+            // Corrected: Get the test case directly
+            JsonNode testCase = jsonDataReader.getTestData("testFilterByCity");
 
-        if (testCase == null) {
-            throw new RuntimeException("Test data for 'testFilterByCity' not found in testdata.json");
+            if (testCase == null) {
+                throw new RuntimeException("Test data for 'testFilterByCity' not found in testdata.json");
+            }
+
+            String cityName = testCase.get("cityname").asText();
+            test.get().log(Status.INFO, "Applying filter for city: " + cityName);
+
+            // Apply the city filter
+            filterPage.applyCityFilter(cityName);
+
+            // Save filter with a random name and capture the random name
+            String filterName = filterPage.saveFilterName();
+
+            test.get().log(Status.INFO, "Successfully saved filter with a random name: " + filterName);
+
+            // Validate that the filter is present by passing the dynamically generated filter name
+            boolean isFilterSaved = filterPage.isFilterPresent(filterName);
+
+            // Assert that the filter is saved successfully
+            Assert.assertTrue(isFilterSaved, "The filter with name '" + filterName + "' was not found in the saved filters.");
+
+        } catch (Exception e) {
+            test.get().log(Status.FAIL, "Test failed due to: " + e.getMessage());
+            throw e; // Re-throw the exception to ensure the test fails
         }
-
-        String cityName = testCase.get("cityname").asText();
-        test.get().log(Status.INFO, "Applying filter for city: " + cityName);
-
-        // Apply the city filter
-        filterPage.applyCompanyFilter(cityName);
-
-        // Save filter with a random name
-        filterPage.saveFilterName();
-
-        test.get().log(Status.INFO, "Successfully saved filter with a random name.");
-
-        filterPage.isFilterPresent("randomFilterName");
     }
-
 
     @Test(priority = 2)
     public void testApplyFilterWithoutInput() {

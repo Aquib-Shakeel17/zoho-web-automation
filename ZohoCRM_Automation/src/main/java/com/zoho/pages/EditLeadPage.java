@@ -10,8 +10,7 @@ import org.openqa.selenium.WebElement;
 public class EditLeadPage extends BasePage {
     private static final Logger log = LogManager.getLogger(EditLeadPage.class);
 
-    // Make editLeadButton accessible for WaitUtil method
-
+    // Element locators
     public By companyText = By.xpath("//span[@id='subvalue_COMPANY']");
     public By mandatoryErrorForCompany = By.xpath("//span[@id='errorMsg_Crm_Leads_COMPANY']");
     public By companyEditField = By.xpath("//input[@id='inputId']");
@@ -27,100 +26,93 @@ public class EditLeadPage extends BasePage {
         super(driver);
     }
 
-    // Method to capture the text inside the companyEditField
+    // Captures the text inside the company edit field
     public String getCompanyEditFieldText() {
         log.info("Waiting for company edit field to be visible.");
-        WaitUtil.waitForElementVisible(driver, companyEditField); // Wait for the field to be visible
+        WaitUtil.waitForElementVisible(driver, companyEditField);
         log.info("Capturing text inside company edit field.");
         WebElement field = driver.findElement(companyEditField);
         return field.getAttribute("value"); // Captures the value of the field
     }
 
-    // Method to get the text of the company name
+    // Gets the text of the company name
     public String getCompanyText() {
         log.info("Waiting for company text to be visible.");
-        WaitUtil.waitForElementVisible(driver, companyText); // Wait for the company text to be visible
-        WebElement companyTextElement = driver.findElement(companyText); // Find the company text element
-        return companyTextElement.getText(); // Return the text inside the company span
+        WaitUtil.waitForElementVisible(driver, companyText);
+        WebElement companyTextElement = driver.findElement(companyText);
+        return companyTextElement.getText();
     }
 
-    // Method to clear the existing text in companyEditField and click the save button
+    // Clears the existing text in companyEditField and clicks the save button
     public void clearCompanyEditFieldAndSave() {
         log.info("Waiting for company edit field to be visible.");
-        WaitUtil.waitForElementVisible(driver, companyEditField); // Wait for the field to be visible
+        WaitUtil.waitForElementVisible(driver, companyEditField);
         WebElement companyField = driver.findElement(companyEditField);
 
         log.info("Clearing the existing text in company edit field.");
-        companyField.clear(); // Clear existing text
+        companyField.clear();
 
         log.info("Waiting for Save button to be clickable.");
-        WaitUtil.waitForElementClickable(driver, saveButton); // Wait for the Save button to be clickable
+        WaitUtil.waitForElementClickable(driver, saveButton);
 
         log.info("Clicking on Save button.");
-        click(saveButton); // Click the save button
+        click(saveButton);
     }
 
+    // Clears the company edit field and enters a new company name before saving
     public void clearCompanyEditFieldAndSave(String companyName) {
         log.info("Waiting for company edit field to be visible.");
-        WaitUtil.waitForElementVisible(driver, companyEditField); // Wait for the field to be visible
+        WaitUtil.waitForElementVisible(driver, companyEditField);
         WebElement companyField = driver.findElement(companyEditField);
 
         log.info("Clearing the existing text in company edit field.");
-        companyField.clear(); // Clear existing text
+        companyField.clear();
 
         log.info("Entering new company name: " + companyName);
-        companyField.sendKeys(companyName); // Enter the new value
+        companyField.sendKeys(companyName);
 
         log.info("Waiting for Save button to be clickable.");
-        WaitUtil.waitForElementClickable(driver, saveButton); // Wait for the Save button to be clickable
+        WaitUtil.waitForElementClickable(driver, saveButton);
 
         log.info("Clicking on Save button.");
-        click(saveButton); // Click the save button
+        click(saveButton);
     }
 
-    // Method to click the Edit button with waiting
+    // Clicks the Edit button after ensuring it is clickable
     public void clickEditLeadButton() {
         log.info("Waiting for Edit Lead button to be clickable.");
-        WaitUtil.waitForElementClickable(driver, editLeadButton); // Wait until the Edit button is clickable
+        WaitUtil.waitForElementClickable(driver, editLeadButton);
         log.info("Clicking on Edit Lead button.");
         click(editLeadButton);
     }
 
-    // Method to enter email with waiting
-    public void enterEmail(String email) {
-        log.info("Waiting for email field to be visible.");
-        WaitUtil.waitForElementVisible(driver, emailField); // Wait until the email field is visible
-        log.info("Entering email: " + email);
-        sendKeys(emailField, email);
-    }
-
-    // Method to click on a lead by its name with waiting
+    // Clicks on a lead by its name, allowing partial matches
     public void clickLeadByName(String leadName) {
-        // Use contains() to find the lead by partial match
-        String dynamicXPath = "//lyte-text[contains(normalize-space(),'" + leadName + "')]";
+        String dynamicXPath = "//lyte-text[contains(normalize-space(),'" + leadName + "')]"; // Dynamic XPath for partial text match
         By leadLocator = By.xpath(dynamicXPath);
+
         log.info("Waiting for lead with name containing: " + leadName + " to be clickable.");
-        WaitUtil.waitForElementClickable(driver, leadLocator); // Wait until the lead is clickable
+        WaitUtil.waitForElementClickable(driver, leadLocator);
         log.info("Clicking on lead with name containing: " + leadName);
         click(leadLocator);
     }
 
-    // New method to check if the Edit button is visible
+    // Checks if the Edit button is visible
     public boolean isEditButtonVisible() {
         try {
             log.info("Checking if Edit button is visible.");
             WebElement editButton = driver.findElement(editLeadButton);
             return editButton.isDisplayed();
         } catch (Exception e) {
-            return false; // Return false if the Edit button is not found
+            return false;
         }
     }
 
-    // Method to capture the error message for the company field
+    // Captures the error message for the company field
     public String getCompanyErrorMessage() {
         log.info("Waiting for company error message to be visible.");
-        WaitUtil.waitForElementVisible(driver, mandatoryErrorForCompany); // Wait for the error message to be visible
-        WebElement errorMessageElement = driver.findElement(mandatoryErrorForCompany); // Find the error message element
-        return errorMessageElement.getText(); // Capture and return the error message text
+        WaitUtil.waitForElementVisible(driver, mandatoryErrorForCompany);
+        WebElement errorMessageElement = driver.findElement(mandatoryErrorForCompany);
+        return errorMessageElement.getText();
     }
 }

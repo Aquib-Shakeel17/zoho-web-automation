@@ -35,8 +35,18 @@ public class WaitUtil {
     }
 
     public static void waitForElementVisible(WebDriver driver, String elementLocator) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Adjust timeout as needed
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement element = driver.findElement(By.xpath(elementLocator));
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+
+    public static void sleepFor(long milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            System.err.println("Thread was interrupted during sleep.");
+        }
+    }
 }
+

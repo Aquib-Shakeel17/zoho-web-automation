@@ -17,7 +17,6 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class CreateLeadTest extends BaseTest {
     private LeadPage leadPage;
     private HomePage homePage;
@@ -28,20 +27,22 @@ public class CreateLeadTest extends BaseTest {
 
     @BeforeClass
     public void loadTestData() {
+        // Load test data from JSON file
         jsonDataReader = new JsonDataReader("src/test/resources/testdata.json");
+        log.info("Test data loaded successfully.");
     }
-
 
     @Test(priority = 1)
     public void testValidateCreateLeadText() {
         test.get().log(Status.INFO, "Starting test: Validate Create Lead Text");
 
         homePage = new HomePage(getDriver());
-        leadPage = homePage.navigateToCreateLeadPage(); // Directly navigating
+        leadPage = homePage.navigateToCreateLeadPage();
 
         String createLeadText = leadPage.getCreateLeadText();
         test.get().log(Status.INFO, "Fetched Create Lead page text: " + createLeadText);
 
+        // Validate Create Lead page text
         try {
             Assert.assertEquals(createLeadText, "Create Lead", "Create Lead text is incorrect.");
             test.get().log(Status.PASS, "Create Lead text is displayed correctly.");
@@ -64,6 +65,7 @@ public class CreateLeadTest extends BaseTest {
         String companyError = leadPage.getCompanyErrorMessage();
         String lastNameError = leadPage.getLastNameErrorMessage();
 
+        // Validate error messages for missing mandatory fields
         try {
             Assert.assertEquals(companyError, "Company cannot be empty.", "Company error message is incorrect.");
             test.get().log(Status.PASS, "Company validation error displayed correctly.");
@@ -104,6 +106,7 @@ public class CreateLeadTest extends BaseTest {
 
         String emailError = leadPage.getEmailErrorMessage();
 
+        // Validate error message for invalid email format
         try {
             Assert.assertEquals(emailError, "Please enter a valid Email.", "Email format error message is incorrect.");
             test.get().log(Status.PASS, "Email validation error displayed correctly.");
@@ -113,8 +116,6 @@ public class CreateLeadTest extends BaseTest {
         }
     }
 
-
-// ✅ **Step 4: Valid Lead Creation**
     @Test(priority = 4)
     public void testCreateLeadWithValidData() {
         test.get().log(Status.INFO, "Starting test: Create Lead with Valid Data");
@@ -133,7 +134,7 @@ public class CreateLeadTest extends BaseTest {
         createdLeadDetails.put("lastName", lastName);
 
         // Navigate to the 'Create Lead' page
-        homePage = new HomePage(getDriver());  // Using same driver instance
+        homePage = new HomePage(getDriver());
         leadPage = homePage.navigateToCreateLeadPage();
         test.get().log(Status.INFO, "Navigated to Create Lead page");
 
@@ -144,16 +145,16 @@ public class CreateLeadTest extends BaseTest {
         leadPage.clickSave();
         test.get().log(Status.INFO, "Clicked Save to create the lead");
 
-        // ✅ **Inline Validation: Verify if the lead is created successfully**
-        WebDriver driver = getDriver(); // Ensure we get the same driver instance
+        // Verify if the lead is created successfully
+        WebDriver driver = getDriver();
         String expectedLeadName = firstName + " " + lastName;
 
         // Dynamic XPath to locate the created lead
         String leadXpath = "//span[contains(text(),'" + expectedLeadName + "')]";
 
-        // **Use the same driver instance without reassigning it**
         boolean isLeadPresent = getDriver().findElements(By.xpath(leadXpath)).size() > 0;
 
+        // Validate if the lead is present on the page
         try {
             Assert.assertTrue(isLeadPresent, "Lead was not found on the next page.");
             test.get().log(Status.PASS, "Lead created and validated successfully: " + expectedLeadName);
@@ -163,15 +164,14 @@ public class CreateLeadTest extends BaseTest {
         }
     }
 
-    // ✅ **Step 5: Cancel Lead**
     @Test(priority = 5)
     public void testCancelLeadCreation() {
         test.get().log(Status.INFO, "Starting test: Cancel Lead Creation");
 
-        // Retrieve randomized test data
+        // Retrieve test data
         JsonNode testData = jsonDataReader.getTestData("testCreateLeadWithValidData");
 
-        // Extract randomized values
+        // Extract test data values
         String firstName = testData.get("firstName").asText();
         String lastName = testData.get("lastName").asText();
         String company = testData.get("company").asText();
@@ -181,7 +181,7 @@ public class CreateLeadTest extends BaseTest {
                 ", Company: " + company + ", Email: " + email);
 
         // Navigate to the 'Create Lead' page
-        homePage = new HomePage(getDriver());  // Using same driver instance
+        homePage = new HomePage(getDriver());
         leadPage = homePage.navigateToCreateLeadPage();
 
         // Enter lead details
@@ -192,10 +192,9 @@ public class CreateLeadTest extends BaseTest {
         leadPage.clickCancel();
         test.get().log(Status.INFO, "Clicked Cancel - Lead should not be created.");
 
-        // **Verification: Ensure we are back on the same page**
+        // Verify if we are back on the same page
         boolean isCreateTextVisible = leadPage.isCancelTextDisplayed();
         Assert.assertTrue(isCreateTextVisible, "User was redirected discard pop-up.");
         test.get().log(Status.PASS, "Verified redirection back to Cancel Pop-up.");
     }
-
 }

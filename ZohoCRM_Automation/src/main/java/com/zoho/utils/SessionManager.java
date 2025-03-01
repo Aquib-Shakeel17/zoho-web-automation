@@ -12,7 +12,6 @@ public class SessionManager {
     public static void ensureUserIsLoggedIn(WebDriver driver) {
         log.info("Checking if user session is active...");
 
-        HomePage homePage = new HomePage(driver);
         String currentUrl = driver.getCurrentUrl();
 
         // Check if user is already logged in
@@ -24,12 +23,5 @@ public class SessionManager {
         log.info("No active session found or user is on the login page. Proceeding with login...");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.signIn();
-
-        // Verify login success
-        if (homePage.isUserProfileNameDisplayed()) {
-            log.info("User successfully logged in.");
-        } else {
-            log.error("Login failed! Unable to detect active session.");
-        }
     }
 }

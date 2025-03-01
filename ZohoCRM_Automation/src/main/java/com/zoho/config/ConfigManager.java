@@ -12,6 +12,7 @@ public class ConfigManager {
 
     static {
         try {
+            // Load properties from config file
             FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
             properties.load(fis);
             fis.close();
@@ -23,9 +24,9 @@ public class ConfigManager {
     }
 
     /**
-     * Fetches a property value from config.properties.
-     * @param key The property key.
-     * @return The property value or an empty string if missing.
+     * Retrieves the value of a configuration property.
+     * @param key The property key to fetch.
+     * @return The property value or an empty string if not found.
      */
     public static String getProperty(String key) {
         String value = properties.getProperty(key);

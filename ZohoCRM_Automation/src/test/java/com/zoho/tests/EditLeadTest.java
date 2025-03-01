@@ -25,18 +25,16 @@ public class EditLeadTest extends BaseTest {
     public void testClickLeadByName() {
         test.get().log(Status.INFO, "Starting test: testClickLeadByName");
 
-        // Get test data from JSON
+        // Retrieve lead name dynamically from JSON for this test
         JsonNode testData = jsonDataReader.getTestData("testClickLeadByName");
-        String leadName = testData.get("leadName").asText(); // Getting lead name dynamically from JSON
+        String leadName = testData.get("leadName").asText();
 
-        // Initialize EditLeadPage
+        // Initialize EditLeadPage and perform actions
         editLeadPage = new EditLeadPage(getDriver());
-
-        // Click the lead with the dynamic name
         log.info("Clicking lead by name: " + leadName);
-        editLeadPage.clickLeadByName(leadName);
+        editLeadPage.clickLeadByName(leadName); // Clicking the lead by the dynamic name
 
-        // Validate if Edit button is shown
+        // Validate if Edit button is visible after clicking the lead
         boolean isEditButtonVisible = editLeadPage.isEditButtonVisible();
         try {
             Assert.assertTrue(isEditButtonVisible, "Edit button is not visible after clicking the lead");
@@ -46,17 +44,17 @@ public class EditLeadTest extends BaseTest {
             throw e;
         }
 
-        editLeadPage.clickEditLeadButton();
+        editLeadPage.clickEditLeadButton(); // Click Edit button to modify the lead details
 
-        // Capture the text inside the company field
+        // Capture the text inside the company field before any modifications
         String companyText = editLeadPage.getCompanyEditFieldText();
         log.info("Captured company field text: " + companyText);
         test.get().log(Status.INFO, "Captured company field text: " + companyText);
 
-        // Clear the company field and try saving
+        // Clear the company field and try saving without entering any company name
         editLeadPage.clearCompanyEditFieldAndSave();
 
-        // Validate that the error message is displayed
+        // Validate that the appropriate error message is displayed for the empty company field
         String companyErrorMessage = editLeadPage.getCompanyErrorMessage();
         try {
             Assert.assertEquals(companyErrorMessage, "Company cannot be empty.", "Error message is incorrect.");
@@ -71,18 +69,16 @@ public class EditLeadTest extends BaseTest {
     public void testClearCompanyAndEnterNewName() {
         test.get().log(Status.INFO, "Starting test: testClearCompanyAndEnterNewName");
 
-        // Get test data from JSON for clicking the lead
+        // Retrieve lead name dynamically from JSON for this test
         JsonNode testDataClickLead = jsonDataReader.getTestData("testClickLeadByName");
         String leadName = testDataClickLead.get("leadName").asText(); // Getting lead name dynamically from JSON
 
-        // Initialize EditLeadPage
+        // Initialize EditLeadPage and perform actions
         editLeadPage = new EditLeadPage(getDriver());
-
-        // Click the lead with the dynamic name
         log.info("Clicking lead by name: " + leadName);
-        editLeadPage.clickLeadByName(leadName);
+        editLeadPage.clickLeadByName(leadName); // Clicking the lead by the dynamic name
 
-        // Validate if Edit button is shown
+        // Validate if Edit button is visible after clicking the lead
         boolean isEditButtonVisible = editLeadPage.isEditButtonVisible();
         try {
             Assert.assertTrue(isEditButtonVisible, "Edit button is not visible after clicking the lead");
@@ -92,9 +88,9 @@ public class EditLeadTest extends BaseTest {
             throw e;
         }
 
-        editLeadPage.clickEditLeadButton();
+        editLeadPage.clickEditLeadButton(); // Click Edit button to modify the lead details
 
-        // Fetch the test data for clearing company and entering new name
+        // Retrieve company name dynamically from JSON for updating
         JsonNode testDataClearCompany = jsonDataReader.getTestData("testClearCompanyAndEnterNewName");
         String companyName = testDataClearCompany.get("company").asText();
 
@@ -104,11 +100,10 @@ public class EditLeadTest extends BaseTest {
         // Verify that the company field is updated with the new value
         String companyFieldText = editLeadPage.getCompanyEditFieldText();
         Assert.assertEquals(companyFieldText, companyName, "Company name is not updated correctly.");
-
         test.get().log(Status.PASS, "Company name updated successfully to: " + companyName);
 
-        // Validate the updated company name text
-        String updatedCompanyText = editLeadPage.getCompanyText();  // Get the updated company text from the span
+        // Validate that the company name is correctly updated on the lead details page
+        String updatedCompanyText = editLeadPage.getCompanyText();
         try {
             Assert.assertEquals(updatedCompanyText, "Testing", "Company name is not updated correctly.");
             test.get().log(Status.PASS, "Company name updated successfully to: " + updatedCompanyText);

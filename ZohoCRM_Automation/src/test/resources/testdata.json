@@ -25,6 +25,10 @@
       "companyName": "Testing"
     },
     {
+      "testName": "testFilterByCity",
+      "cityname": "Middle Island"
+    },
+    {
       "testName": "testClickLeadByName",
       "leadName": "Christopher Maclead (Sample)"
     },

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import com.zoho.utils.WaitUtil;
 
 public class LeadPage extends BasePage {
     private static final Logger log = LogManager.getLogger(LeadPage.class);
@@ -31,56 +32,69 @@ public class LeadPage extends BasePage {
         super(driver);
     }
 
-    // Fill lead details
+    // Method to fill lead details (First Name, Last Name, Company, Email)
     public void enterLeadDetails(String firstName, String lastName, String company, String email) {
-        log.info("Entering lead details: {} {}, Company: {}", firstName, lastName, company);
+        log.info("Entering lead details: FirstName: {}, LastName: {}, Company: {}, Email: {}", firstName, lastName, company, email);
+        WaitUtil.waitForElementVisible(driver, firstNameField);
         sendKeys(firstNameField, firstName);
+
+        WaitUtil.waitForElementVisible(driver, lastNameField);
         sendKeys(lastNameField, lastName);
+
+        WaitUtil.waitForElementVisible(driver, companyField);
         sendKeys(companyField, company);
+
+        WaitUtil.waitForElementVisible(driver, emailField);
         sendKeys(emailField, email);
     }
 
-    // Click Save
-    // Click Save
+    // Method to click the Save button
     public void clickSave() {
         log.info("Clicking 'Save' button.");
+        WaitUtil.waitForElementClickable(driver, saveButton);
         click(saveButton);
     }
 
-    // Click Cancel
+    // Method to click the Cancel button
     public void clickCancel() {
         log.info("Clicking 'Cancel' button.");
+        WaitUtil.waitForElementClickable(driver, cancelButton);
         click(cancelButton);
     }
 
-    // Get specific error messages
+    // Method to fetch and return the company error message
     public String getCompanyErrorMessage() {
         log.info("Fetching Company error message.");
+        WaitUtil.waitForElementVisible(driver, companyError);
         return getText(companyError);
     }
 
+    // Method to fetch and return the last name error message
     public String getLastNameErrorMessage() {
         log.info("Fetching Last Name error message.");
+        WaitUtil.waitForElementVisible(driver, lastNameError);
         return getText(lastNameError);
     }
 
+    // Method to fetch and return the email error message
     public String getEmailErrorMessage() {
         log.info("Fetching Email error message.");
+        WaitUtil.waitForElementVisible(driver, emailError);
         return getText(emailError);
     }
 
-    // Get "Create Lead" text
+    // Method to fetch and return the "Create Lead" text
     public String getCreateLeadText() {
         log.info("Fetching 'Create Lead' text.");
+        WaitUtil.waitForElementVisible(driver, createLeadText);
         return getText(createLeadText);
     }
 
-    public boolean isCreateLeadButtonVisible() {
-        return driver.findElement(createLeadButton).isDisplayed();
-    }
 
+    // Method to check if the 'Cancel' text is displayed
     public boolean isCancelTextDisplayed() {
+        log.info("Checking if 'Cancel' text is displayed.");
+        WaitUtil.waitForElementVisible(driver, cancelText);
         return driver.findElement(cancelText).isDisplayed();
     }
-
 }
