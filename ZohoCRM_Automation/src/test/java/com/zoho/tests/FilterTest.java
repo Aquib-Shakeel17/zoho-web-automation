@@ -44,7 +44,7 @@ public class FilterTest extends BaseTest {
         test.get().log(Status.INFO, "Applying filter for city: " + cityName);
 
         // Apply the city filter
-        filterPage.applyCityFilter(cityName);
+        filterPage.applyCompanyFilter(cityName);
 
         // Save filter with a random name
         filterPage.saveFilterName();

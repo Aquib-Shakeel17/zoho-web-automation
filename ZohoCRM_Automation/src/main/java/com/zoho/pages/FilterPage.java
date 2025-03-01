@@ -12,6 +12,7 @@ public class FilterPage extends BasePage {
     private static final Logger log = LogManager.getLogger(FilterPage.class);
 
     private By cityFilterCheckbox = By.xpath("//lyte-checkbox[@id='field_City']//span[@class='lyteCheckBoxDefault']");
+    private By companyFilterCheckbox = By.xpath("//lyte-checkbox[@id='field_Company']//span[@class='lyteCheckBoxDefault']");
     private By filterInputField = By.xpath("//input[@placeholder='Type here']");
     private By applyFilterButton = By.xpath("//lyte-yield[normalize-space()='Apply Filter']");
     private By saveFilterButton = By.xpath("//lyte-yield[normalize-space()='Save filter']");
@@ -20,8 +21,6 @@ public class FilterPage extends BasePage {
     private By clearFilterButton = By.xpath("//span[@id='layerClearFilter']");
     private By alertMessage = By.xpath("//span[contains(@class,'alertHeader')]");
     private By savedFiltersList = By.xpath("//ul[@id='savedFilterSort']/li");
-
-
 
     public FilterPage(WebDriver driver) {
         super(driver);
@@ -60,6 +59,38 @@ public class FilterPage extends BasePage {
         log.info("Successfully applied the filter.");
     }
 
+    public void applyCompanyFilter(String companyName) throws InterruptedException {
+        log.info("Pausing before selecting the city filter checkbox to prevent stale element issues.");
+        Thread.sleep(3000); // Short delay to prevent stale elements
+
+        // Handle dynamic XPath and select the FIRST matching accordion header
+        log.info("Clicking on the first accordion to expand filters.");
+        WebElement accordionElement = WaitUtil.waitForElementClickable(driver, By.xpath("(//lyte-accordion-header[starts-with(@id, 'lyte_accordion_header_')])[1]"));
+        accordionElement.click();
+
+        Thread.sleep(1000); // Allow UI to update after expanding the accordion
+
+        log.info("Selecting company filter checkbox.");
+        WebElement cityCheckbox = WaitUtil.waitForElementClickable(driver, companyFilterCheckbox);
+        cityCheckbox.click();
+
+        log.info("Waiting for filter input field to appear.");
+        WebElement inputField = WaitUtil.waitForElementVisible(driver, filterInputField);
+        inputField.sendKeys(companyName);
+
+        log.info("Entered company name: {}", companyName);
+
+        Thread.sleep(1000); // Allow UI to settle
+
+        // Ensure Apply Filter button is visible before clicking
+        WebElement applyFilterElement = WaitUtil.waitForElementVisible(driver, applyFilterButton);
+
+        log.info("Clicking on Apply Filter button.");
+        Thread.sleep(500); // Short wait to stabilize UI
+        applyFilterElement.click();
+
+        log.info("Successfully applied the filter.");
+    }
 
     public void applyCityFilterWithEnterKey(String cityName) {
         log.info("Pausing before selecting the city filter checkbox to prevent stale element issues.");
@@ -85,29 +116,71 @@ public class FilterPage extends BasePage {
         log.info("Successfully applied the filter using Enter key.");
     }
 
-
-    public void saveFilter() {
-        log.info("Waiting for Save Filter button and clicking it.");
-        WaitUtil.waitForElementClickable(driver, saveFilterButton).click();
-        log.info("Filter has been saved successfully.");
-    }
-
     public void saveFilterName() {
         log.info("Waiting for Save Filter button and clicking it.");
-        WaitUtil.waitForElementClickable(driver, saveFilterButton).click();
+
+        // Wait for Save Filter button to be clickable
+        WebElement saveButton = WaitUtil.waitForElementClickable(driver, saveFilterButton);
+
+        try {
+            // Attempt to click the Save Filter button
+            saveButton.click();
+        } catch (ElementClickInterceptedException e) {
+            // Handle overlay/modal interception
+            log.warn("Click intercepted, handling overlay/modal...");
+
+            // Wait for the overlay or modal to disappear
+            try {
+                log.info("Waiting for modal/overlay to disappear...");
+                WaitUtil.waitForElementInvisibility(driver, By.xpath("//lyte-modal-footer")); // Update the XPath to your modal/overlay element
+            } catch (TimeoutException te) {
+                log.error("Timeout waiting for overlay to disappear.");
+                throw new RuntimeException("Overlay did not disappear in time", te);
+            }
+
+            // Retry clicking the Save Filter button
+            saveButton.click();
+        }
 
         // Generate a random filter name
         String randomFilterName = "Filter_" + new Random().nextInt(10000);
-
         log.info("Entering filter name: " + randomFilterName);
         WebElement inputField = WaitUtil.waitForElementVisible(driver, saveFilterInputField);
         inputField.clear();
         inputField.sendKeys(randomFilterName);
 
-        log.info("Clicking the Save button.");
-        WaitUtil.waitForElementClickable(driver, confirmSaveButton).click();
+        // Wait briefly before proceeding (after entering the filter name)
+        try {
+            log.info("Waiting for 1 second before finding the save button...");
+            Thread.sleep(1000); // Wait for 1 second (you can adjust this time as needed)
+        } catch (InterruptedException ie) {
+            log.error("Thread sleep interrupted: " + ie.getMessage());
+        }
 
-        log.info("Filter saved successfully with name: " + randomFilterName);
+        log.info("Clicking the Save button.");
+        WebElement confirmSaveButtonElement = WaitUtil.waitForElementClickable(driver, confirmSaveButton);
+
+        try {
+            confirmSaveButtonElement.click(); // Click confirm save button
+            log.info("Filter saved successfully with name: " + randomFilterName);
+
+            // Wait for 4 seconds after clicking the save button
+            log.info("Waiting for 4 seconds after save button click...");
+            Thread.sleep(4000); // Wait for 4 seconds before moving forward
+        } catch (ElementClickInterceptedException e) {
+            log.error("Click intercepted again, retrying after handling the modal.");
+            // Wait and close the modal (if necessary)
+            try {
+                Thread.sleep(2000); // Adjust the sleep time as needed
+            } catch (InterruptedException ie) {
+                ie.printStackTrace();
+            }
+
+            // Retry clicking the confirm button
+            confirmSaveButtonElement.click();
+        } catch (InterruptedException e) {
+            log.error("Thread sleep interrupted: " + e.getMessage());
+        }
     }
 
     public boolean isFilterPresent(String filterName) {
@@ -132,7 +205,6 @@ public class FilterPage extends BasePage {
     }
 
     public void clickApplyFilterWithoutInput() {
-
         log.info("Clicking Apply Filter button without entering any input.");
         WebElement applyFilterElement = WaitUtil.waitForElementVisible(driver, applyFilterButton);
 
@@ -144,7 +216,6 @@ public class FilterPage extends BasePage {
     }
 
     public void selectCityFilter() {
-
         log.info("Pausing before selecting the city filter checkbox to prevent stale element issues.");
 
         // Short pause before interacting with the checkbox (can be replaced with an explicit wait)
@@ -155,9 +226,7 @@ public class FilterPage extends BasePage {
         }
         log.info("Selecting city filter checkbox.");
         WaitUtil.waitForElementClickable(driver, cityFilterCheckbox).click();
-
     }
-
 
     public void clearFilter() {
         log.info("Waiting for Clear Filter button and clicking it.");

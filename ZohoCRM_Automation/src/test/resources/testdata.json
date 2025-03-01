@@ -21,8 +21,24 @@
       "email": "RANDOM"
     },
     {
-      "testName": "testFilterByCity",
-      "cityname": "Lucknow"
+      "testName": "testFilterByCompanyName",
+      "companyName": "Testing"
+    },
+    {
+      "testName": "testClickLeadByName",
+      "leadName": "Christopher Maclead (Sample)"
+    },
+    {
+      "testName": "testClickLeadByName",
+      "leadName": "sample (raja)"
+    },
+    {
+      "testName": "testClickLeadByName",
+      "leadName": "(Sample)"
+    },
+    {
+      "testName": "testClearCompanyAndEnterNewName",
+      "company": "Testing"
     }
   ]
 }

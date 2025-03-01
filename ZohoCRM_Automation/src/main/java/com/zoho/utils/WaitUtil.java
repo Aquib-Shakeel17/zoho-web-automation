@@ -26,4 +26,17 @@ public class WaitUtil {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT));
         return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
+
+    // Wait for element's invisibility
+    public static void waitForElementInvisibility(WebDriver driver, By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+
+    }
+
+    public static void waitForElementVisible(WebDriver driver, String elementLocator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Adjust timeout as needed
+        WebElement element = driver.findElement(By.xpath(elementLocator));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
 }
