@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class EditLeadTest extends BaseTest {
-    private EditLeadPage editLeadPage;
+    public EditLeadPage editLeadPage;
     private JsonDataReader jsonDataReader;
     private static final Logger log = LogManager.getLogger(EditLeadTest.class);
 
