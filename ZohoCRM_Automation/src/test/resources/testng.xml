@@ -1,9 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="ZohoCRM Test Suite" parallel="none"> <!-- Change "methods" to "none" -->
+<suite name="ZohoCRM Test Suite" parallel="false">
+
     <test name="ZohoCRM Tests">
         <classes>
-            <class name="com.zoho.tests.LoginTest"/>
             <class name="com.zoho.tests.CreateLeadTest"/>
+            <class name="com.zoho.tests.EditLeadTest"/>
+            <class name="com.zoho.tests.FilterTest"/>
+            <class name="com.zoho.tests.DeleteLeadTest"/>
         </classes>
     </test>
+
 </suite>
