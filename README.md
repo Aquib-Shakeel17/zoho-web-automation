@@ -6,55 +6,6 @@ reporting, and logging.
 It follows a **Page Object Model** design and incorporates browser handling, logging, reporting, and configuration management.
 
 
-## Framework Structure
-
-
-`/ZohoCRM_Automation
-│
-├── /logs                          # Logs generated during test execution
-│   └── test.log                   # Log file capturing runtime information
-│
-├── /reports                       # Test execution reports
-│   └── ExtentReport               # ExtentReports HTML report
-│
-├── /src/main/java/com/zoho        # Main source code
-│   ├── /config                    # Configuration classes
-│   │   ├── AppConfig.java         # Centralized application configuration
-│   │   └── ConfigManager.java     # Configuration management
-│   │
-│   ├── /pages                     # Page Object Model classes
-│   │   ├── BasePage.java          # Base page with common methods
-│   │   ├── DeleteLeadPage.java    # Page object for 'Delete Lead' functionality
-│   │   ├── EditLeadPage.java      # Page object for 'Edit Lead' functionality
-│   │   ├── FilterPage.java        # Page object for 'Filter' functionality
-│   │   ├── HomePage.java          # Page object for 'Home' page
-│   │   ├── LeadPage.java          # Page object for 'Lead' page
-│   │   └── LoginPage.java         # Page object for 'Login' page
-│   │
-│   ├── /utils                     # Utility classes
-│   │   ├── BrowserFactory.java    # Browser initialization and WebDriver management
-│   │   ├── JsonDataReader.java    # Utility for reading JSON data
-│   │   ├── SessionManager.java    # Session management during tests
-│   │   ├── WaitUtil.java          # Wait strategies for handling dynamic elements
-│   │   └── WindowUtils.java       # Utilities for managing browser windows
-│   │
-│   └── /test                      # Test classes
-│       ├── BaseTest.java          # Base test class for setup and teardown
-│       ├── CreateLeadTest.java    # Test case for creating a lead
-│       ├── DeleteLeadTest.java    # Test case for deleting a lead
-│       ├── EditLeadTest.java      # Test case for editing a lead
-│       ├── FilterTest.java        # Test case for filtering leads
-│       └── ...
-│
-├── /src/test/resources            # Resources for testing
-│   ├── config.properties          # Configuration file for environment settings
-│   ├── log4j2.xml                 # Log configuration file
-│   ├── testdata.json              # JSON file containing test data
-│   └── testng.xml                 # TestNG configuration for defining test suite
-│
-├── pom.xml                        # Maven project file for managing dependencies`
-
-
 **Key Components**
 
 ## Pages:
@@ -117,3 +68,5 @@ It follows a **Page Object Model** design and incorporates browser handling, log
     To run the tests, execute the following Maven command:
 
    mvn clean test
+
+
