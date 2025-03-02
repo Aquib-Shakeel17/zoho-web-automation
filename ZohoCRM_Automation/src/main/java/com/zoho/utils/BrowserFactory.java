@@ -12,47 +12,42 @@ import org.apache.logging.log4j.Logger;
 
 public class BrowserFactory {
     private static final Logger log = LogManager.getLogger(BrowserFactory.class);
-    private static final ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
 
-    // Synchronized method to get WebDriver instance based on browser type (Chrome, Firefox, Edge)
-    public static synchronized WebDriver getDriver(String browser) {
-        if (driverThreadLocal.get() == null) {
-            WebDriver driverInstance;
-            switch (browser.toLowerCase()) {
-                case "firefox":
-                    WebDriverManager.firefoxdriver().setup();  // Setup Firefox WebDriver
-                    driverInstance = new FirefoxDriver();
-                    break;
-                case "edge":
-                    WebDriverManager.edgedriver().setup();  // Setup Edge WebDriver
-                    driverInstance = new EdgeDriver();
-                    break;
-                case "chrome":
-                default:
-                    WebDriverManager.chromedriver().setup();  // Setup Chrome WebDriver
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--start-maximized");  // Open Chrome maximized
-                    options.addArguments("--disable-notifications");  // Disable notifications
-                    driverInstance = new ChromeDriver(options);
-                    break;
-            }
-            driverInstance.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-            log.info("Initialized WebDriver for browser: " + browser);
-            driverThreadLocal.set(driverInstance);
+    // Static method to get WebDriver instance based on browser type
+    public static WebDriver getDriver(String browser) {
+        WebDriver driverInstance;
+
+        switch (browser.toLowerCase()) {
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();  // Setup Firefox WebDriver
+                driverInstance = new FirefoxDriver();
+                break;
+            case "edge":
+                WebDriverManager.edgedriver().setup();  // Setup Edge WebDriver
+                driverInstance = new EdgeDriver();
+                break;
+            case "chrome":
+            default:
+                WebDriverManager.chromedriver().setup();  // Setup Chrome WebDriver
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--start-maximized");  // Open Chrome maximized
+                options.addArguments("--disable-notifications");  // Disable notifications
+                driverInstance = new ChromeDriver(options);
+                break;
         }
-        return driverThreadLocal.get();
+        driverInstance.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        log.info("Initialized WebDriver for browser: " + browser);
+        return driverInstance;
     }
 
     // Method to quit the WebDriver and clean up resources
-    public static void quitDriver() {
-        if (driverThreadLocal.get() != null) {
+    public static void quitDriver(WebDriver driver) {
+        if (driver != null) {
             try {
-                driverThreadLocal.get().quit();
+                driver.quit();
                 log.info("Browser session closed successfully.");
             } catch (Exception e) {
                 log.error("Error quitting the driver: " + e.getMessage());
-            } finally {
-                driverThreadLocal.remove();
             }
         }
     }

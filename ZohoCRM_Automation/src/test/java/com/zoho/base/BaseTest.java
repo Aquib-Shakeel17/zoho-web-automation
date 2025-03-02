@@ -16,11 +16,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class BaseTest {
+    // Extent Reports for logging test execution
     protected static ExtentReports extent;
     protected static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
-    protected static final Logger log = LogManager.getLogger(BaseTest.class);
-    protected static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
+    // Logger for logging events
+    protected static final Logger log = LogManager.getLogger(BaseTest.class);
+
+    // WebDriver instance
+    protected WebDriver driver;
+
+    /**
+     * Initializes the Extent Reports once before the entire test suite starts.
+     */
     @BeforeSuite
     public void setupSuite() {
         log.info("Initializing Extent Reports for test suite...");
@@ -32,32 +40,52 @@ public abstract class BaseTest {
         log.info("Extent Reports initialized at: " + reportPath);
     }
 
+    /**
+     * Opens the browser before each test method.
+     */
     @BeforeMethod
-    @Parameters("browser")
-    public void setupTest(@Optional("chrome") String browser, Method method) {
-        log.info("Starting test: " + method.getName());
-        driver.set(BrowserFactory.getDriver(browser));
-        driver.get().manage().window().maximize();
-        driver.get().get(AppConfig.BASE_URL);
+    @Parameters("browser")  // Pass the browser parameter from the TestNG XML
+    public void setupMethod(@Optional("chrome") String browser) {
+        log.info("Starting new browser instance for test...");
+        driver = BrowserFactory.getDriver(browser);
+        driver.manage().window().maximize();
+        driver.get(AppConfig.BASE_URL);
         log.info("Navigated to: " + AppConfig.BASE_URL);
 
-        // Ensure the user is logged in before executing the test
-        SessionManager.ensureUserIsLoggedIn(getDriver());
+        // Ensure user is logged in before test execution
+        SessionManager.ensureUserIsLoggedIn(driver);
+    }
 
+    /**
+     * Runs before each test method to create an Extent Report entry.
+     */
+    @BeforeMethod
+    public void setupTest(Method method) {
+        log.info("Starting test: " + method.getName());
         ExtentTest extentTest = extent.createTest(method.getName());
         test.set(extentTest);
     }
 
+    /**
+     * Returns the WebDriver instance for the current method.
+     */
     public WebDriver getDriver() {
-        return driver.get();
+        return driver;
     }
 
+    /**
+     * Runs after each test method to close the browser.
+     */
     @AfterMethod
-    public void tearDownTest() {
+    public void tearDownMethod() {
         log.info("Closing browser after test execution.");
-        BrowserFactory.quitDriver();
+        BrowserFactory.quitDriver(driver);  // Quit the driver associated with the test
+        driver = null;  // Clear the driver reference
     }
 
+    /**
+     * Flushes the Extent Reports at the end of the test suite.
+     */
     @AfterSuite
     public void tearDownSuite() {
         log.info("Tearing down the test suite.");
