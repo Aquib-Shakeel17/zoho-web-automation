@@ -54,7 +54,6 @@ It follows a **Page Object Model** design and incorporates browser handling, log
 │
 ├── pom.xml                        # Maven project file for managing dependencies`
 
-
 **Key Components**
 
 ## Pages:
@@ -104,13 +103,36 @@ It follows a **Page Object Model** design and incorporates browser handling, log
 
 ## Prerequisites:
 
-    Before executing the tests, ensure the following prerequisites are in place:
 
-    Java (JDK 11 or higher) is installed.
-    Maven is installed and configured.
-    Selenium WebDriver dependencies are properly configured in the pom.xml file.
-    TestNG is configured for running the test suites.
-    Ensure the config.properties file is configured with the correct environment settings (e.g., base URL, browser settings).
+    Before running the framework, ensure that the following dependencies are installed and configured:
+    Create a new gmail account
+    Sign up on zoho dashboard and set up account(Company name and size) -> Get started and Skip
+    Verify the account from gmail account
+    Sign out from zoho dashboard
+    Sign in again on Zoho dashboard -> update the location
+    Sign Out again
+    Sign In again and -> skip (Secure your account using MFA)
+    Update the login_email and login_password in project and save
+    Java (JDK 11)
+    Check Java installation:
+    java -version
+    If not installed, download from Oracle JDK or install OpenJDK.
+    Apache Maven (Build Automation Tool)
+    Check Maven installation:
+    mvn -version
+    If not installed, download from Maven and set it up in the system environment variables.
+    Git (Version Control System)
+    Check Git installation:
+    git --version
+    If not installed, download from Git.
+    Chrome Browser (For Selenium WebDriver Tests)
+    Ensure the latest version of Chrome is installed.
+    Clone the Repository: git clone https://github.com/Aquib-Shakeel17/zoho-web-automation.git
+    Navigate into the Project Directory: cd zoho-web-automation
+    Verify the Branch: git branch -a (Check available branches) → git checkout master (Switch to master branch)
+    Set Up Dependencies: mvn clean install (Downloads and installs required libraries)
+    Configure Properties : Update config.properties in src/test/resources for credentials (login_email, login_password) and browser settings.
+    Run All Test Cases: mvn clean test (Executes the test suite).
 
 ## Running the Tests:
 
