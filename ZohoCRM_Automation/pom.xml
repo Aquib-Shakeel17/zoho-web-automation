@@ -110,14 +110,11 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <!-- Remove parallel execution settings -->
                     <properties>
                         <property>
                             <name>parallel</name>
-                            <value>methods</value>
-                        </property>
-                        <property>
-                            <name>threadCount</name>
-                            <value>4</value>
+                            <value>none</value>  <!-- Ensure no parallel execution -->
                         </property>
                     </properties>
                 </configuration>

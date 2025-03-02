@@ -169,7 +169,6 @@ public class FilterPage extends BasePage {
     }
 
 
-
     public void clickApplyFilterWithoutInput() {
         log.info("Clicking Apply Filter button without entering any input.");
         WebElement applyFilterElement = WaitUtil.waitForElementVisible(driver, applyFilterButton);

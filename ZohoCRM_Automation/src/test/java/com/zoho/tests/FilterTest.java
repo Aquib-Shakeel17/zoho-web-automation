@@ -88,9 +88,10 @@ public class FilterTest extends BaseTest {
         filterPage.selectCityFilter();
         test.get().log(Status.INFO, "Selected the City filter checkbox.");
 
-        // Click Apply Filter without entering any input
+        // Click on Apply Filter without entering any input
         filterPage.clickApplyFilterWithoutInput();
         test.get().log(Status.INFO, "Clicked on Apply Filter button without entering any input.");
+
 
         // Verify that an alert message appears
         String alertText = filterPage.getAlertMessage();
