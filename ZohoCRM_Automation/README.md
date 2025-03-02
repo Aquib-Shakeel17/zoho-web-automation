@@ -1,108 +1,124 @@
-# Zoho CRM Web Automation Framework
+## Zoho CRM Web Automation Framework
 
-This is an automation framework designed for testing Zoho CRM's web application. The framework uses **Selenium WebDriver**, **TestNG**, and **ExtentReports** for test execution, reporting, and logging. It follows a **Page Object Model** design and incorporates browser handling, logging, reporting, and configuration management.
+This is an automation framework designed for testing Zoho CRM's web application.
+The framework uses **Selenium WebDriver**, **TestNG**, and **ExtentReports** for test execution,
+reporting, and logging.
+It follows a **Page Object Model** design and incorporates browser handling, logging, reporting, and configuration management.
 
----
 
 ## Framework Structure
 
-### Folder Structure
 
-/Users/apple/IdeaProjects/zoho-web-automation/ZohoCRM_Automation
-├── /logs
-│   └── test.log
-├── /reports
-├── /src
-│   ├── /main/java/com/zoho/config
-│   │   ├── ConfigManager.java
-│   │   └── AppConfig.java
-│   ├── /main/java/com/zoho/utils
-│   │   └── BrowserFactory.java
-│   ├── /test/java/com/zoho/base
-│   │   └── BaseTest.java
-│   ├── /test/java/com/zoho/tests
-│   │   └── LoginTest.java
-│   ├── /test/resources
-│   │   ├── testdata
-│   │   ├── config.properties
-│   │   ├── log4j2.xml
-│   │   └── testng.xml
-├── pom.xml
-
-
----
-
-## Key Components
-
-- **`ConfigManager.java`**: Handles loading properties from `config.properties` and provides a utility method `getProperty()` to retrieve configuration values.
-
-- **`Constants.java`**: Defines constants like the base URL and browser type for the automation suite, pulled from the configuration file.
-
-- **`BrowserFactory.java`**: A factory class that initializes and manages WebDriver instances for different browsers (Chrome, Firefox, Edge) using **WebDriverManager**.
-
-- **`BaseTest.java`**: The base test class extended by individual test classes. It manages browser session setup/teardown, report generation, and logging.
-
-- **`LoginTest.java`**: A sample test class for testing the login functionality of Zoho CRM.
-
----
-
-## Dependencies
-
-- **Selenium WebDriver**
-- **TestNG**
-- **ExtentReports**
-- **Log4j2**
-- **WebDriverManager**
-
----
-
-## Setup Instructions
-
-### 1. Clone the Repository:
+`/ZohoCRM_Automation
+│
+├── /logs                          # Logs generated during test execution
+│   └── test.log                   # Log file capturing runtime information
+│
+├── /reports                       # Test execution reports
+│   └── ExtentReport               # ExtentReports HTML report
+│
+├── /src/main/java/com/zoho        # Main source code
+│   ├── /config                    # Configuration classes
+│   │   ├── AppConfig.java         # Centralized application configuration
+│   │   └── ConfigManager.java     # Configuration management
+│   │
+│   ├── /pages                     # Page Object Model classes
+│   │   ├── BasePage.java          # Base page with common methods
+│   │   ├── DeleteLeadPage.java    # Page object for 'Delete Lead' functionality
+│   │   ├── EditLeadPage.java      # Page object for 'Edit Lead' functionality
+│   │   ├── FilterPage.java        # Page object for 'Filter' functionality
+│   │   ├── HomePage.java          # Page object for 'Home' page
+│   │   ├── LeadPage.java          # Page object for 'Lead' page
+│   │   └── LoginPage.java         # Page object for 'Login' page
+│   │
+│   ├── /utils                     # Utility classes
+│   │   ├── BrowserFactory.java    # Browser initialization and WebDriver management
+│   │   ├── JsonDataReader.java    # Utility for reading JSON data
+│   │   ├── SessionManager.java    # Session management during tests
+│   │   ├── WaitUtil.java          # Wait strategies for handling dynamic elements
+│   │   └── WindowUtils.java       # Utilities for managing browser windows
+│   │
+│   └── /test                      # Test classes
+│       ├── BaseTest.java          # Base test class for setup and teardown
+│       ├── CreateLeadTest.java    # Test case for creating a lead
+│       ├── DeleteLeadTest.java    # Test case for deleting a lead
+│       ├── EditLeadTest.java      # Test case for editing a lead
+│       ├── FilterTest.java        # Test case for filtering leads
+│       └── ...
+│
+├── /src/test/resources            # Resources for testing
+│   ├── config.properties          # Configuration file for environment settings
+│   ├── log4j2.xml                 # Log configuration file
+│   ├── testdata.json              # JSON file containing test data
+│   └── testng.xml                 # TestNG configuration for defining test suite
+│
+├── pom.xml                        # Maven project file for managing dependencies`
 
 
-git clone <repository_url>
-cd ZohoCRM_Automation
-### 2. Install Dependencies:
-Ensure you have Maven installed, then run the following command to download the required dependencies:
+**Key Components**
 
-mvn install
-### 3. Configure the config.properties File:
-Update the src/test/resources/config.properties file with your Zoho CRM base URL and desired browser (chrome, firefox, edge).
+## Pages:
+    The framework follows the Page Object Model (POM) design pattern.
+    Each page or screen in the application is represented by a corresponding Java class under the /pages folder.
+    These classes contain methods that interact with the web elements on their respective pages.
 
-Example:
+## Config:
+   The /config folder contains configuration-related classes such as:
 
-properties
+    AppConfig.java: Holds static configuration values for easy access throughout the framework.
+    ConfigManager.java: Loads properties from the config.properties file and provides a method to retrieve individual configuration values.
 
-base_url=https://www.zoho.com/crm
-browser=chrome
-### 4. Log Configuration:
-The log4j2.xml file is pre-configured to handle logging. You can modify it according to your logging requirements.
+## Utilities:
+   Utility classes are present under the /utils folder to assist with various tasks like:
 
-### 5. Run the Tests:
-Execute the following Maven command to run the tests:
+    BrowserFactory: Initializes and manages the WebDriver.
+    JsonDataReader: Handles reading and parsing data from external JSON files.
+    WaitUtil: Implements wait strategies for handling dynamic web elements.
+    SessionManager: Manages the browser session during tests.
 
+## Test Classes:
 
-mvn clean test
-### 6. Report Generation:
-The framework generates an Extent Report after test execution. You can find the generated report in the /reports folder.
+   Test classes reside in the /test folder and contain the actual test cases.
+   They typically extend BaseTest.java for common setup and teardown operations.
+   Example test cases include:
 
-Running Specific Tests
-To run specific tests using TestNG, modify the testng.xml file or use the following command:
+    CreateLeadTest.java
+    EditLeadTest.java
+    FilterLeadTest.java
+    DeleteLeadTest.java
 
+## Test Configuration and Data:
 
-mvn test -Dtest=LoginTest
+    config.properties: Contains environment-specific settings, such as the base URL and browser configurations.
+    testng.xml: Defines the test suite, which includes test execution configuration, such as which tests to run, parallel execution, etc.
+    testdata.json: Stores data needed for test execution (e.g., sample input for creating a lead).
 
-### Reporting
-The framework uses ExtentReports to generate detailed HTML reports. These reports can be found in the /reports folder and provide test execution details, including passed/failed tests, screenshots (if configured), and logs.
+## Reports and Logs:
 
-### Logging
-Logs for the test execution are captured using Log4j2 and can be found in the logs/test.log file. You can modify logging levels and output in the log4j2.xml configuration.
+    ExtentReports: Provides a detailed HTML report (ExtentReport_YYYYMMDD_HHMMSS.html) for each test run.
+    test.log: Captures logs during the execution of tests to help with debugging and tracking test progress.
 
-### Utilities
-BrowserFactory: Provides browser instances based on the browser name passed to the getDriver() method.
+## Maven (pom.xml):
+   The project uses Maven as the build and dependency management tool.
+   The pom.xml contains dependencies for libraries such as Selenium, TestNG, ExtentReports, and others.
 
-ConfigManager: Loads the configuration file (config.properties) and makes it accessible for other classes.
+## Prerequisites:
 
-ExtentReports: Generates detailed test reports in HTML format.
+    Before executing the tests, ensure the following prerequisites are in place:
+
+    Java (JDK 11 or higher) is installed.
+    Maven is installed and configured.
+    Selenium WebDriver dependencies are properly configured in the pom.xml file.
+    TestNG is configured for running the test suites.
+    Ensure the config.properties file is configured with the correct environment settings (e.g., base URL, browser settings).
+
+## Running the Tests:
+
+    To run the tests, execute the following Maven command:
+
+   **mvn clean test**
+
+This framework is designed to be modular and scalable, supporting easy addition of new test cases, page objects, and utilities.
+It adheres to best practices for test automation, ensuring maintainability and readability.
+
 
