@@ -55,6 +55,13 @@ It follows a **Page Object Model** design and incorporates browser handling, log
 
 ## Prerequisites
     Before running the framework, ensure that the following dependencies are installed and configured:
+    Create a new gmail account
+    Sign up on zoho dashboard and set up account(Company name and size) -> Get started and Skip
+    Verify the account from gmail account
+    Sign out from zoho dashboard
+    Sign in again on Zoho dashboard -> update the location
+    Sign Out again
+    Sign In again and -> skip (Secure your account using MFA)
     Java (JDK 11)
     Check Java installation:
     java -version
