@@ -62,6 +62,7 @@ It follows a **Page Object Model** design and incorporates browser handling, log
     Sign in again on Zoho dashboard -> update the location
     Sign Out again
     Sign In again and -> skip (Secure your account using MFA)
+    Update the login_email and login_password in project and save
     Java (JDK 11)
     Check Java installation:
     java -version
